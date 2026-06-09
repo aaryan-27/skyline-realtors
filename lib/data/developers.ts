@@ -63,7 +63,7 @@ export const DEVELOPERS: Developer[] = [
     achievements: [
       "Fastest-selling launches on Dwarka Expressway",
       "Smart-home and app-controlled living standard across projects",
-      "₹8,000+ Cr in cumulative bookings",
+      "Rs.8,000+ Cr in cumulative bookings",
     ],
     completed: 6,
     ongoing: 9,

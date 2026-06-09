@@ -13,7 +13,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us — Trusted Real Estate Advisors in Gurgaon",
   description:
-    "Learn about Mahadev Properties — a decade of trusted, data-backed real estate advisory across Gurgaon, New Gurgaon & Dwarka Expressway. ₹1000 Cr+ in deals, 5000+ happy clients.",
+    "Learn about DLF Privana Amraj Infra — a decade of trusted, data-backed real estate advisory across Gurgaon, New Gurgaon & Dwarka Expressway. Rs.1000 Cr+ in deals, 5000+ happy clients.",
   alternates: { canonical: "/about" },
 };
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Over a decade, we&apos;ve advised on more than{" "}
-                <strong className="text-navy">₹1,000 crore</strong> in property
+                <strong className="text-navy">Rs.1,000 crore</strong> in property
                 transactions, helped over{" "}
                 <strong className="text-navy">5,000 families and investors</strong>,
                 and built preferred-partner relationships with{" "}
@@ -87,7 +87,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { v: "₹1000Cr+", l: "Deals Advised" },
+                { v: "Rs.1000Cr+", l: "Deals Advised" },
                 { v: "5000+", l: "Happy Clients" },
                 { v: "50+", l: "Developer Partners" },
               ].map((s) => (
@@ -103,7 +103,7 @@ export default function AboutPage() {
               <div className="corner-frame relative overflow-hidden rounded-3xl">
                 <Image
                   src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
-                  alt="Mahadev Properties advisory office"
+                  alt="DLF Privana Amraj Infra advisory office"
                   width={1000}
                   height={1100}
                   className="h-full w-full object-cover"

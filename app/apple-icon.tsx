@@ -19,9 +19,9 @@ export default function AppleIcon() {
           fontFamily: "Georgia, serif",
         }}
       >
-        <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1 }}>MP</div>
-        <div style={{ fontSize: 16, letterSpacing: 4, color: "#E9D3A6", marginTop: 8 }}>
-          MAHADEV
+        <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1 }}>AI</div>
+        <div style={{ fontSize: 14, letterSpacing: 3, color: "#E9D3A6", marginTop: 8 }}>
+          AMRAJ INFRA
         </div>
       </div>
     ),

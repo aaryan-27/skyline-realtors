@@ -3,7 +3,7 @@ export type Location = {
   name: string;
   shortName: string;
   tagline: string;
-  avgPrice: string; // ₹ per sq.ft.
+  avgPrice: string; // Rs. per sq.ft.
   rentalYield: string;
   growthPotential: "Very High" | "High" | "Moderate";
   infraRating: number; // out of 5
@@ -13,7 +13,7 @@ export type Location = {
   schools: string[];
   hospitals: string[];
   malls: string[];
-  priceTrend: { year: string; price: number }[]; // ₹/sqft
+  priceTrend: { year: string; price: number }[]; // Rs./sqft
   futureGrowth: string[];
   investmentAnalysis: string;
   heroImage: string;
@@ -37,7 +37,7 @@ export const LOCATIONS: Location[] = [
     name: "Dwarka Expressway",
     shortName: "Dwarka Expressway",
     tagline: "Gurugram's fastest-appreciating real estate corridor",
-    avgPrice: "₹12,000 – ₹16,000 /sq.ft.",
+    avgPrice: "Rs.12,000 – Rs.16,000 /sq.ft.",
     rentalYield: "3.0 – 3.8%",
     growthPotential: "Very High",
     infraRating: 4.7,
@@ -80,7 +80,7 @@ export const LOCATIONS: Location[] = [
       },
       {
         q: "What is the average price on Dwarka Expressway?",
-        a: "Premium under-construction apartments trade at roughly ₹12,000–₹16,000 per sq.ft., varying by developer, sector and project stage.",
+        a: "Premium under-construction apartments trade at roughly Rs.12,000–Rs.16,000 per sq.ft., varying by developer, sector and project stage.",
       },
       {
         q: "Which developers have projects on Dwarka Expressway?",
@@ -93,7 +93,7 @@ export const LOCATIONS: Location[] = [
     name: "New Gurgaon",
     shortName: "New Gurgaon",
     tagline: "Planned sectors with value pricing and strong upside",
-    avgPrice: "₹9,000 – ₹13,000 /sq.ft.",
+    avgPrice: "Rs.9,000 – Rs.13,000 /sq.ft.",
     rentalYield: "3.2 – 4.0%",
     growthPotential: "High",
     infraRating: 4.3,
@@ -145,12 +145,12 @@ export const LOCATIONS: Location[] = [
     name: "Sector 84",
     shortName: "Sector 84",
     tagline: "Established township living in the heart of New Gurgaon",
-    avgPrice: "₹9,500 – ₹12,500 /sq.ft.",
+    avgPrice: "Rs.9,500 – Rs.12,500 /sq.ft.",
     rentalYield: "3.3 – 4.0%",
     growthPotential: "High",
     infraRating: 4.2,
     overview:
-      "Sector 84 sits at the core of New Gurgaon within the Vatika India Next township. With established residential communities, an emerging SCO commercial belt and excellent NH-48 connectivity, Sector 84 is a balanced micro-market for both end-users and investors — minutes from our Mahadev Properties office in neighbouring Sector 86.",
+      "Sector 84 sits at the core of New Gurgaon within the Vatika India Next township. With established residential communities, an emerging SCO commercial belt and excellent NH-48 connectivity, Sector 84 is a balanced micro-market for both end-users and investors — minutes from our DLF Privana Amraj Infra office in nearby Sector 76.",
     connectivity: [
       "Direct connectivity to NH-48 & Pataudi Road",
       "Minutes from Dwarka Expressway interchange",
@@ -193,7 +193,7 @@ export const LOCATIONS: Location[] = [
     name: "Sector 85",
     shortName: "Sector 85",
     tagline: "Connected, planned and primed for appreciation",
-    avgPrice: "₹9,000 – ₹12,000 /sq.ft.",
+    avgPrice: "Rs.9,000 – Rs.12,000 /sq.ft.",
     rentalYield: "3.2 – 3.9%",
     growthPotential: "High",
     infraRating: 4.1,
@@ -239,7 +239,7 @@ export const LOCATIONS: Location[] = [
     name: "Sector 88",
     shortName: "Sector 88",
     tagline: "Premium New Gurgaon living with commercial upside",
-    avgPrice: "₹9,500 – ₹13,000 /sq.ft.",
+    avgPrice: "Rs.9,500 – Rs.13,000 /sq.ft.",
     rentalYield: "3.2 – 3.9%",
     growthPotential: "High",
     infraRating: 4.2,
@@ -285,7 +285,7 @@ export const LOCATIONS: Location[] = [
     name: "Sector 89",
     shortName: "Sector 89",
     tagline: "Value-driven growth sector in New Gurgaon",
-    avgPrice: "₹8,800 – ₹12,000 /sq.ft.",
+    avgPrice: "Rs.8,800 – Rs.12,000 /sq.ft.",
     rentalYield: "3.3 – 4.1%",
     growthPotential: "High",
     infraRating: 4.0,
@@ -331,7 +331,7 @@ export const LOCATIONS: Location[] = [
     name: "Sector 90",
     shortName: "Sector 90",
     tagline: "Emerging New Gurgaon sector with long-term potential",
-    avgPrice: "₹8,500 – ₹11,500 /sq.ft.",
+    avgPrice: "Rs.8,500 – Rs.11,500 /sq.ft.",
     rentalYield: "3.3 – 4.1%",
     growthPotential: "Moderate",
     infraRating: 3.9,
@@ -377,7 +377,7 @@ export const LOCATIONS: Location[] = [
     name: "Golf Course Extension Road",
     shortName: "Golf Course Ext Rd",
     tagline: "Gurugram's premium luxury residential address",
-    avgPrice: "₹15,000 – ₹22,000 /sq.ft.",
+    avgPrice: "Rs.15,000 – Rs.22,000 /sq.ft.",
     rentalYield: "2.8 – 3.5%",
     growthPotential: "Very High",
     infraRating: 4.6,
@@ -420,7 +420,7 @@ export const LOCATIONS: Location[] = [
       },
       {
         q: "What is the price range on Golf Course Extension Road?",
-        a: "Premium residences typically range from ₹15,000 to ₹22,000+ per sq.ft. depending on developer and project.",
+        a: "Premium residences typically range from Rs.15,000 to Rs.22,000+ per sq.ft. depending on developer and project.",
       },
     ],
   },
@@ -429,7 +429,7 @@ export const LOCATIONS: Location[] = [
     name: "SPR Road",
     shortName: "SPR Road",
     tagline: "The next big infrastructure-led growth corridor",
-    avgPrice: "₹11,000 – ₹15,000 /sq.ft.",
+    avgPrice: "Rs.11,000 – Rs.15,000 /sq.ft.",
     rentalYield: "3.0 – 3.7%",
     growthPotential: "Very High",
     infraRating: 4.4,
@@ -477,7 +477,7 @@ export const LOCATIONS: Location[] = [
     name: "Sohna Road",
     shortName: "Sohna Road",
     tagline: "Established connectivity with steady, end-user demand",
-    avgPrice: "₹10,000 – ₹14,000 /sq.ft.",
+    avgPrice: "Rs.10,000 – Rs.14,000 /sq.ft.",
     rentalYield: "3.2 – 4.0%",
     growthPotential: "High",
     infraRating: 4.2,

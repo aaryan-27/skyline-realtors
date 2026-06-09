@@ -41,7 +41,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Investment Guides",
     excerpt:
       "Now that the expressway is fully operational, we break down price trends, upcoming supply and the realistic appreciation outlook for investors entering in 2026.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-05-28",
     readTime: "8 min read",
     cover: COVER.invest,
@@ -56,7 +56,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "What the numbers say",
-        body: "Premium under-construction apartments now trade at ₹12,000–₹16,000 per sq.ft. While the easy doubling phase is behind us, we project a healthy 12–16% annual appreciation over the next three years, driven by metro connectivity, possession-linked demand and limited prime supply.",
+        body: "Premium under-construction apartments now trade at Rs.12,000–Rs.16,000 per sq.ft. While the easy doubling phase is behind us, we project a healthy 12–16% annual appreciation over the next three years, driven by metro connectivity, possession-linked demand and limited prime supply.",
       },
       {
         heading: "Who should invest now",
@@ -70,7 +70,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Commercial Real Estate",
     excerpt:
       "Shop-Cum-Office plots offer 100% ownership and double-digit returns. Here's how SCO economics work and why they're outperforming traditional shops.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-05-15",
     readTime: "7 min read",
     cover: COVER.commercial,
@@ -95,7 +95,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Market Insights",
     excerpt:
       "Two of Gurugram's hottest corridors, two very different investment profiles. We compare pricing, appreciation, rental demand and buyer fit.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-04-30",
     readTime: "9 min read",
     cover: COVER.market,
@@ -106,11 +106,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Golf Course Extension: the blue-chip play",
-        body: "GCER is the prestige address — limited supply, top schools and hospitals, and durable demand from senior executives. At ₹15,000–₹22,000+ per sq.ft., it's a wealth-preservation play with steady appreciation and strong rental demand.",
+        body: "GCER is the prestige address — limited supply, top schools and hospitals, and durable demand from senior executives. At Rs.15,000–Rs.22,000+ per sq.ft., it's a wealth-preservation play with steady appreciation and strong rental demand.",
       },
       {
         heading: "Dwarka Expressway: the growth play",
-        body: "Dwarka Expressway offers more entry points at ₹12,000–₹16,000 per sq.ft. and a stronger appreciation story, thanks to airport proximity and ongoing infrastructure delivery. It suits investors prioritising capital growth over prestige.",
+        body: "Dwarka Expressway offers more entry points at Rs.12,000–Rs.16,000 per sq.ft. and a stronger appreciation story, thanks to airport proximity and ongoing infrastructure delivery. It suits investors prioritising capital growth over prestige.",
       },
       {
         heading: "Our verdict",
@@ -124,7 +124,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "NRI Investments",
     excerpt:
       "From FEMA rules and repatriation to remote site visits and power of attorney — everything NRIs need to invest in Gurgaon with confidence.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-04-12",
     readTime: "10 min read",
     cover: COVER.nri,
@@ -153,7 +153,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Luxury Homes",
     excerpt:
       "Low density, branded residences, wellness amenities and smart automation are redefining luxury. Here's what premium buyers are prioritising now.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-03-25",
     readTime: "6 min read",
     cover: COVER.luxury,
@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Property News",
     excerpt:
       "Our quarterly read on Gurugram's micro-markets — which corridors are heating up, where prices are stabilising, and what it means for buyers.",
-    author: "Mahadev Properties Research",
+    author: "DLF Privana Amraj Infra Research",
     date: "2026-06-02",
     readTime: "7 min read",
     cover: COVER.market,

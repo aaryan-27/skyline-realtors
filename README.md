@@ -1,6 +1,6 @@
-# Mahadev Properties — Luxury Real Estate Advisory
+# DLF Privana Amraj Infra — Luxury Real Estate Advisory
 
-A premium, conversion-optimised, SEO-first website for **Mahadev Properties**, positioning the company as the most trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway and Delhi NCR.
+A premium, conversion-optimised, SEO-first website for **DLF Privana Amraj Infra**, positioning the company as the most trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway and Delhi NCR.
 
 Built with **Next.js 15 (App Router) · TypeScript · Tailwind CSS · Framer Motion**.
 

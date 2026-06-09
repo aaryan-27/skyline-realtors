@@ -15,7 +15,7 @@ export function organizationSchema() {
     email: SITE.email,
     image: `${SITE.url}/opengraph-image`,
     logo: `${SITE.url}/icon`,
-    priceRange: "₹₹₹",
+    priceRange: "Rs.Rs.Rs.",
     foundingDate: SITE.founded,
     address: {
       "@type": "PostalAddress",

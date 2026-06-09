@@ -100,9 +100,9 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "4 BHK + Utility", area: "3,950 sq.ft.", price: "₹7.0 Cr*" },
-      { type: "4 BHK + Study", area: "4,200 sq.ft.", price: "₹8.4 Cr*" },
-      { type: "Penthouse", area: "5,800 sq.ft.", price: "₹9.5 Cr*" },
+      { type: "4 BHK + Utility", area: "3,950 sq.ft.", price: "Rs.7.0 Cr*" },
+      { type: "4 BHK + Study", area: "4,200 sq.ft.", price: "Rs.8.4 Cr*" },
+      { type: "Penthouse", area: "5,800 sq.ft.", price: "Rs.9.5 Cr*" },
     ],
     about:
       "DLF The Arbour is a ground-up luxury address on the Golf Course Extension Road, offering expansive 4 BHK residences with hospitality-grade amenities and DLF's institutional build quality. A blue-chip investment with strong rental demand from senior corporate executives.",
@@ -133,9 +133,9 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK", area: "2,180 sq.ft.", price: "₹3.25 Cr*" },
-      { type: "4 BHK", area: "2,800 sq.ft.", price: "₹4.1 Cr*" },
-      { type: "4 BHK + Servant", area: "3,250 sq.ft.", price: "₹5.5 Cr*" },
+      { type: "3 BHK", area: "2,180 sq.ft.", price: "Rs.3.25 Cr*" },
+      { type: "4 BHK", area: "2,800 sq.ft.", price: "Rs.4.1 Cr*" },
+      { type: "4 BHK + Servant", area: "3,250 sq.ft.", price: "Rs.5.5 Cr*" },
     ],
     about:
       "M3M Crown sits on the high-growth Dwarka Expressway, the fastest-appreciating corridor in Gurugram. With airport proximity, metro connectivity and M3M's signature lifestyle, it is a top pick for both end-users and investors seeking capital appreciation.",
@@ -166,8 +166,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "2.5 BHK", area: "1,650 sq.ft.", price: "₹2.4 Cr*" },
-      { type: "3.5 BHK", area: "2,250 sq.ft.", price: "₹3.1 Cr*" },
+      { type: "2.5 BHK", area: "1,650 sq.ft.", price: "Rs.2.4 Cr*" },
+      { type: "3.5 BHK", area: "2,250 sq.ft.", price: "Rs.3.1 Cr*" },
     ],
     about:
       "Smart World One DXP brings technology-forward living to the Delhi-facing edge of Dwarka Expressway. Aggressively priced with strong early-investor appreciation, it's ideal for first-time luxury buyers and rental investors.",
@@ -198,8 +198,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK", area: "2,500 sq.ft.", price: "₹4.2 Cr*" },
-      { type: "4 BHK", area: "3,200 sq.ft.", price: "₹5.6 Cr*" },
+      { type: "3 BHK", area: "2,500 sq.ft.", price: "Rs.4.2 Cr*" },
+      { type: "4 BHK", area: "3,200 sq.ft.", price: "Rs.5.6 Cr*" },
     ],
     about:
       "Godrej Aristocrat is a new-launch luxury address on Golf Course Extension Road, combining Godrej's trust and sustainability standards with a prime, established micro-market. Early-stage pricing offers strong appreciation headroom.",
@@ -237,9 +237,9 @@ export const PROJECTS: Project[] = [
       "Power Backup",
     ],
     configurations: [
-      { type: "Lower Ground Retail", area: "250 sq.ft.", price: "₹1.8 Cr*" },
-      { type: "Ground Floor Retail", area: "400 sq.ft.", price: "₹3.2 Cr*" },
-      { type: "Food Court Unit", area: "180 sq.ft.", price: "₹1.5 Cr*" },
+      { type: "Lower Ground Retail", area: "250 sq.ft.", price: "Rs.1.8 Cr*" },
+      { type: "Ground Floor Retail", area: "400 sq.ft.", price: "Rs.3.2 Cr*" },
+      { type: "Food Court Unit", area: "180 sq.ft.", price: "Rs.1.5 Cr*" },
     ],
     about:
       "Elan The Mark is a landmark high-street retail destination on Dwarka Expressway with a premium residential catchment, designed for strong rental yields and footfall-driven appreciation.",
@@ -279,9 +279,9 @@ export const PROJECTS: Project[] = [
       "Cafeteria",
     ],
     configurations: [
-      { type: "Virtual Office", area: "120 sq.ft.", price: "₹95 L*" },
-      { type: "Studio Office", area: "300 sq.ft.", price: "₹2.4 Cr*" },
-      { type: "Retail Shop", area: "350 sq.ft.", price: "₹3.5 Cr*" },
+      { type: "Virtual Office", area: "120 sq.ft.", price: "Rs.95 L*" },
+      { type: "Studio Office", area: "300 sq.ft.", price: "Rs.2.4 Cr*" },
+      { type: "Retail Shop", area: "350 sq.ft.", price: "Rs.3.5 Cr*" },
     ],
     about:
       "M3M Capital Walk offers Grade-A office and retail spaces within a thriving residential ecosystem, ideal for investors seeking pre-leased, assured-return commercial assets.",
@@ -314,8 +314,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK", area: "2,050 sq.ft.", price: "₹2.8 Cr*" },
-      { type: "4 BHK", area: "2,750 sq.ft.", price: "₹3.6 Cr*" },
+      { type: "3 BHK", area: "2,050 sq.ft.", price: "Rs.2.8 Cr*" },
+      { type: "4 BHK", area: "2,750 sq.ft.", price: "Rs.3.6 Cr*" },
     ],
     about:
       "Signature Global Titanium is positioned on the rapidly developing SPR Road, one of Gurugram's highest-appreciation corridors thanks to upcoming infrastructure and connectivity upgrades.",
@@ -353,9 +353,9 @@ export const PROJECTS: Project[] = [
       "Landscaped Plaza",
     ],
     configurations: [
-      { type: "SCO Plot (Standard)", area: "112 sq.yd.", price: "₹7.5 Cr*" },
-      { type: "SCO Plot (Corner)", area: "150 sq.yd.", price: "₹11 Cr*" },
-      { type: "SCO Plot (Anchor)", area: "300 sq.yd.", price: "₹22 Cr*" },
+      { type: "SCO Plot (Standard)", area: "112 sq.yd.", price: "Rs.7.5 Cr*" },
+      { type: "SCO Plot (Corner)", area: "150 sq.yd.", price: "Rs.11 Cr*" },
+      { type: "SCO Plot (Anchor)", area: "300 sq.yd.", price: "Rs.22 Cr*" },
     ],
     about:
       "Elan Imperial offers freehold SCO (Shop-Cum-Office) plots in New Gurgaon — a rare 100%-ownership commercial asset class that lets investors build, lease and earn from retail, office and F&B in a high-growth catchment.",
@@ -388,8 +388,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK Sky Villa", area: "2,600 sq.ft.", price: "₹4.8 Cr*" },
-      { type: "4 BHK Sky Villa", area: "3,600 sq.ft.", price: "₹6.8 Cr*" },
+      { type: "3 BHK Sky Villa", area: "2,600 sq.ft.", price: "Rs.4.8 Cr*" },
+      { type: "4 BHK Sky Villa", area: "3,600 sq.ft.", price: "Rs.6.8 Cr*" },
     ],
     about:
       "Sobha Altus delivers Sobha's celebrated construction quality in a low-density sky-villa format on Dwarka Expressway, attracting quality-conscious end-users and discerning investors.",
@@ -427,8 +427,8 @@ export const PROJECTS: Project[] = [
       "Power Backup",
     ],
     configurations: [
-      { type: "Retail Shop", area: "300 sq.ft.", price: "₹2.6 Cr*" },
-      { type: "SCO Unit", area: "180 sq.yd.", price: "₹6.0 Cr*" },
+      { type: "Retail Shop", area: "300 sq.ft.", price: "Rs.2.6 Cr*" },
+      { type: "SCO Unit", area: "180 sq.yd.", price: "Rs.6.0 Cr*" },
     ],
     about:
       "Experion The Trillion taps the mature Sohna Road catchment with a premium mixed-use retail format from a 100% FDI-funded developer known for low-density, high-quality builds.",
@@ -461,8 +461,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK", area: "2,150 sq.ft.", price: "₹3.0 Cr*" },
-      { type: "4 BHK", area: "2,700 sq.ft.", price: "₹3.9 Cr*" },
+      { type: "3 BHK", area: "2,150 sq.ft.", price: "Rs.3.0 Cr*" },
+      { type: "4 BHK", area: "2,700 sq.ft.", price: "Rs.3.9 Cr*" },
     ],
     about:
       "BPTP Terra is a ready-to-move community on Dwarka Expressway, offering immediate possession, no GST liability and an established, fully-amenitised neighbourhood — ideal for end-users and rental investors.",
@@ -493,8 +493,8 @@ export const PROJECTS: Project[] = [
     ],
     amenities: STD_AMENITIES,
     configurations: [
-      { type: "3 BHK", area: "2,300 sq.ft.", price: "₹3.4 Cr*" },
-      { type: "4 BHK", area: "2,950 sq.ft.", price: "₹4.4 Cr*" },
+      { type: "3 BHK", area: "2,300 sq.ft.", price: "Rs.3.4 Cr*" },
+      { type: "4 BHK", area: "2,950 sq.ft.", price: "Rs.4.4 Cr*" },
     ],
     about:
       "ATS Triumph is a ready-to-move, low-density community on Dwarka Expressway, beloved by families for its livability, open spaces and strong, stable resale demand.",

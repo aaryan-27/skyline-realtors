@@ -9,13 +9,13 @@ export function cn(...inputs: ClassValue[]) {
 export function formatINR(value: number): string {
   if (value >= 1_00_00_000) {
     const cr = value / 1_00_00_000;
-    return `₹${cr % 1 === 0 ? cr.toFixed(0) : cr.toFixed(2)} Cr`;
+    return `Rs.${cr % 1 === 0 ? cr.toFixed(0) : cr.toFixed(2)} Cr`;
   }
   if (value >= 1_00_000) {
     const l = value / 1_00_000;
-    return `₹${l % 1 === 0 ? l.toFixed(0) : l.toFixed(2)} L`;
+    return `Rs.${l % 1 === 0 ? l.toFixed(0) : l.toFixed(2)} L`;
   }
-  return `₹${value.toLocaleString("en-IN")}`;
+  return `Rs.${value.toLocaleString("en-IN")}`;
 }
 
 /** Indian-style grouped integer, e.g. 1234567 -> 12,34,567 */

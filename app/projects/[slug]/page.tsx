@@ -40,7 +40,7 @@ export async function generateMetadata({
   if (!project) return { title: "Project Not Found" };
   return {
     title: `${project.name} by ${project.builder} — ${project.location}`,
-    description: `${project.name}: ${project.type} in ${project.location}. ${project.about.slice(0, 120)}… Price from ${formatINR(project.priceFrom)}. Book a site visit with Mahadev Properties.`,
+    description: `${project.name}: ${project.type} in ${project.location}. ${project.about.slice(0, 120)}… Price from ${formatINR(project.priceFrom)}. Book a site visit with DLF Privana Amraj Infra.`,
     alternates: { canonical: `/projects/${project.slug}` },
     openGraph: { images: [project.heroImage] },
   };
@@ -124,7 +124,7 @@ export default async function ProjectPage({
               <p className="text-xs uppercase tracking-wider2 text-white/50">Starting Price</p>
               <p className="font-display text-3xl font-bold text-gold">{formatINR(project.priceFrom)}*</p>
               {project.pricePerSqft && (
-                <p className="text-sm text-white/55">≈ ₹{project.pricePerSqft.toLocaleString("en-IN")}/sq.ft.</p>
+                <p className="text-sm text-white/55">≈ Rs.{project.pricePerSqft.toLocaleString("en-IN")}/sq.ft.</p>
               )}
             </div>
           </div>
@@ -148,7 +148,7 @@ export default async function ProjectPage({
                 {[
                   { label: "Type", value: project.type, icon: Building2 },
                   { label: "Possession", value: project.possessionDate, icon: CalendarCheck },
-                  { label: "Price/sqft", value: project.pricePerSqft ? `₹${project.pricePerSqft.toLocaleString("en-IN")}` : "On Request", icon: IndianRupee },
+                  { label: "Price/sqft", value: project.pricePerSqft ? `Rs.${project.pricePerSqft.toLocaleString("en-IN")}` : "On Request", icon: IndianRupee },
                   { label: "RERA", value: "Registered", icon: ShieldCheck },
                 ].map((f) => (
                   <div key={f.label} className="rounded-2xl border border-navy/5 bg-white p-5 shadow-card">

@@ -68,7 +68,7 @@ export function ROICalculator() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
-            <NumberField label="Investment Amount (₹)" value={price} step={500000} onChange={setPrice} />
+            <NumberField label="Investment Amount (Rs.)" value={price} step={500000} onChange={setPrice} />
           </div>
           <NumberField label="Holding Period" value={years} suffix="yrs" onChange={setYears} />
           <NumberField label="Annual Appreciation" value={appreciation} suffix="%" step={0.5} onChange={setAppreciation} />

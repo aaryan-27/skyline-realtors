@@ -26,7 +26,7 @@ export function WhyChooseUs() {
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-gold/5 blur-3xl" />
       <div className="container relative">
         <SectionHeading
-          eyebrow="Why Mahadev Properties"
+          eyebrow="Why DLF Privana Amraj Infra"
           title={
             <>
               Advisory you can trust, <span className="text-gold-foil">results you can measure</span>

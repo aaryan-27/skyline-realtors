@@ -49,7 +49,7 @@ async function notifyWhatsApp(lead: LeadPayload) {
   if (!phoneId || !token || !to) return;
 
   const body = [
-    "🏠 *New Lead — Mahadev Properties*",
+    "🏠 *New Lead — DLF Privana Amraj Infra*",
     `*Name:* ${lead.name}`,
     `*Phone:* ${lead.phone}`,
     lead.email ? `*Email:* ${lead.email}` : null,
@@ -84,7 +84,7 @@ async function notifyEmail(lead: LeadPayload) {
   if (!apiKey || !toEmail) return;
 
   const html = `
-    <h2 style="font-family:Georgia,serif;color:#0B1F3A">New Lead — Mahadev Properties</h2>
+    <h2 style="font-family:Georgia,serif;color:#0B1F3A">New Lead — DLF Privana Amraj Infra</h2>
     <table style="font-family:Arial,sans-serif;font-size:14px;color:#1A1A1A">
       <tr><td><b>Name</b></td><td>${lead.name}</td></tr>
       <tr><td><b>Phone</b></td><td>${lead.phone}</td></tr>
@@ -104,7 +104,7 @@ async function notifyEmail(lead: LeadPayload) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "Mahadev Properties <leads@mahadevproperties.in>",
+      from: "DLF Privana Amraj Infra <leads@amrajinfra.in>",
       to: [toEmail],
       subject: `🏠 New Lead: ${lead.name} (${lead.interest ?? "General"})`,
       html,

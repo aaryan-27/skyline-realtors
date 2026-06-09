@@ -5,36 +5,36 @@
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  name: "Mahadev Properties",
-  legalName: "Mahadev Properties Real Estate Advisory",
+  name: "DLF Privana Amraj Infra",
+  legalName: "DLF Privana Amraj Infra Real Estate Advisory",
   tagline: "Your Trusted Partner for Real Estate Investments in Gurgaon",
   description:
-    "Mahadev Properties is the trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
-  url: "https://www.mahadevproperties.in",
-  phone: "+91 90533 00312",
-  phoneRaw: "919053300312",
-  whatsapp: "919053300312",
-  email: "info@mahadevproperties.in",
-  mapsUrl: "https://maps.app.goo.gl/VsWxPaq7zJ9uiDpd9",
+    "DLF Privana Amraj Infra is the trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
+  url: "https://www.amrajinfra.in",
+  phone: "+91 93102 03019",
+  phoneRaw: "919310203019",
+  whatsapp: "919310203019",
+  email: "info@amrajinfra.in",
+  mapsUrl: "https://maps.app.goo.gl/83qhTDcHRQXmEf5z6",
   mapsEmbed:
-    "https://www.google.com/maps?q=SS+Omnia+Sector+86+Gurugram&output=embed",
+    "https://www.google.com/maps?q=Suncity+Avenue+Sector+76+Gurugram&output=embed",
   // Approximate — verify against your Google Business Profile pin.
-  geo: { lat: 28.4006, lng: 76.9461 },
+  geo: { lat: 28.3886, lng: 76.956 },
   address: {
-    street: "Office 95, 3rd Floor, SS Omnia",
-    locality: "Sector 86",
+    street: "Shop No. 14, Suncity Avenue",
+    locality: "Sector 76",
     region: "Gurugram, Haryana",
-    postalCode: "122004",
+    postalCode: "122012",
     country: "IN",
-    full: "Office 95, 3rd Floor, SS Omnia, Sector 86, Gurugram, Haryana 122004",
+    full: "Shop No. 14, Suncity Avenue, Sector 76, Gurugram, Haryana 122012",
   },
   hours: "Mon–Sun · 9:30 AM – 8:00 PM",
   founded: "2014",
   social: {
-    instagram: "https://instagram.com/mahadevproperties",
-    facebook: "https://facebook.com/mahadevproperties",
-    youtube: "https://youtube.com/@mahadevproperties",
-    linkedin: "https://linkedin.com/company/mahadevproperties",
+    instagram: "https://instagram.com/amrajinfra",
+    facebook: "https://facebook.com/amrajinfra",
+    youtube: "https://youtube.com/@amrajinfra",
+    linkedin: "https://linkedin.com/company/amrajinfra",
   },
 } as const;
 
@@ -65,12 +65,12 @@ export const PROPERTY_INTERESTS = [
 ] as const;
 
 export const BUDGET_RANGES = [
-  "Under ₹1 Cr",
-  "₹1 Cr – ₹2 Cr",
-  "₹2 Cr – ₹3.5 Cr",
-  "₹3.5 Cr – ₹5 Cr",
-  "₹5 Cr – ₹10 Cr",
-  "₹10 Cr+",
+  "Under Rs.1 Cr",
+  "Rs.1 Cr – Rs.2 Cr",
+  "Rs.2 Cr – Rs.3.5 Cr",
+  "Rs.3.5 Cr – Rs.5 Cr",
+  "Rs.5 Cr – Rs.10 Cr",
+  "Rs.10 Cr+",
 ] as const;
 
 export const NAV_LINKS = [
@@ -94,7 +94,7 @@ export const NAV_LINKS = [
 export function waLink(message?: string) {
   const text = encodeURIComponent(
     message ??
-      "Hi Mahadev Properties, I'd like to know more about investment opportunities in Gurgaon."
+      "Hi DLF Privana Amraj Infra, I'd like to know more about investment opportunities in Gurgaon."
   );
   return `https://wa.me/${SITE.whatsapp}?text=${text}`;
 }

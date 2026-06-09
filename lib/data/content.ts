@@ -1,7 +1,7 @@
 // Home-page content blocks: stats, value props, testimonials.
 
 export const STATS = [
-  { value: 1000, suffix: "+ Cr", prefix: "₹", label: "Property Deals Closed" },
+  { value: 1000, suffix: "+ Cr", prefix: "Rs.", label: "Property Deals Closed" },
   { value: 5000, suffix: "+", label: "Happy Buyers & Investors" },
   { value: 100, suffix: "+", label: "Premium Projects" },
   { value: 50, suffix: "+", label: "Developer Partnerships" },
@@ -59,8 +59,8 @@ export const TESTIMONIALS: Testimonial[] = [
     location: "Invested in Dwarka Expressway",
     rating: 5,
     quote:
-      "As an NRI, I was nervous about investing remotely. Mahadev Properties handled everything — verification, paperwork, even virtual site tours. My M3M apartment has already appreciated 22% in 18 months.",
-    invested: "M3M Crown · ₹4.1 Cr",
+      "As an NRI, I was nervous about investing remotely. DLF Privana Amraj Infra handled everything — verification, paperwork, even virtual site tours. My M3M apartment has already appreciated 22% in 18 months.",
+    invested: "M3M Crown · Rs.4.1 Cr",
     initials: "RM",
     videoThumb:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
@@ -72,7 +72,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "Their market research was eye-opening. They steered me away from an overpriced project toward DLF The Arbour, which fit my budget and lifestyle perfectly. Truly advisory, not just selling.",
-    invested: "DLF The Arbour · ₹7.0 Cr",
+    invested: "DLF The Arbour · Rs.7.0 Cr",
     initials: "SV",
   },
   {
@@ -82,7 +82,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "We had a tight budget and zero experience. The team patiently explained ROI, possession risk and home-loan options. We closed on a ready-to-move home with no surprises. Highly recommend.",
-    invested: "BPTP Terra · ₹3.0 Cr",
+    invested: "BPTP Terra · Rs.3.0 Cr",
     initials: "AK",
   },
   {
@@ -92,7 +92,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "I wanted a commercial asset with real rental income. They walked me through SCO economics and got me a corner plot at launch pricing. The leasing income now covers my EMI comfortably.",
-    invested: "Elan Imperial SCO · ₹11 Cr",
+    invested: "Elan Imperial SCO · Rs.11 Cr",
     initials: "VR",
     videoThumb:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
@@ -104,7 +104,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "Booked entirely online from Bengaluru. Their data on SPR's infrastructure upgrades convinced me, and the transparency throughout was refreshing. Best property consultant I've dealt with.",
-    invested: "Signature Titanium · ₹2.8 Cr",
+    invested: "Signature Titanium · Rs.2.8 Cr",
     initials: "NA",
   },
   {
@@ -114,18 +114,18 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "After decades of postings, I wanted a settled home. The team understood exactly what I needed, prioritised ready-to-move options, and handled the registry seamlessly. Trustworthy and professional.",
-    invested: "ATS Triumph · ₹3.4 Cr",
+    invested: "ATS Triumph · Rs.3.4 Cr",
     initials: "RS",
   },
 ];
 
 export const MILESTONES = [
   { year: "2014", title: "Founded in Gurugram", desc: "Started advisory operations in New Gurgaon with a focus on transparent dealing." },
-  { year: "2017", title: "₹250 Cr in Deals", desc: "Crossed a quarter-billion in cumulative transactions across residential & commercial." },
+  { year: "2017", title: "Rs.250 Cr in Deals", desc: "Crossed a quarter-billion in cumulative transactions across residential & commercial." },
   { year: "2019", title: "50+ Developer Tie-ups", desc: "Became a preferred partner for DLF, M3M, Godrej, Experion and more." },
   { year: "2021", title: "Dwarka Expressway Specialists", desc: "Established market leadership advising on the corridor's biggest launches." },
   { year: "2023", title: "5,000 Happy Families", desc: "Helped over five thousand buyers and investors find the right property." },
-  { year: "2026", title: "₹1,000 Cr+ Milestone", desc: "Crossed a thousand crore in lifetime property deals advised." },
+  { year: "2026", title: "Rs.1,000 Cr+ Milestone", desc: "Crossed a thousand crore in lifetime property deals advised." },
 ];
 
 export const VALUES = [

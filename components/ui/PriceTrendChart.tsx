@@ -1,6 +1,6 @@
 type Point = { year: string; price: number };
 
-/** Lightweight SVG bar chart for ₹/sqft price trends — server-rendered, no deps. */
+/** Lightweight SVG bar chart for Rs./sqft price trends — server-rendered, no deps. */
 export function PriceTrendChart({ data }: { data: Point[] }) {
   const max = Math.max(...data.map((d) => d.price));
   const first = data[0].price;
@@ -11,7 +11,7 @@ export function PriceTrendChart({ data }: { data: Point[] }) {
     <div className="rounded-2xl border border-navy/5 bg-white p-6 shadow-card">
       <div className="mb-6 flex items-end justify-between">
         <div>
-          <p className="text-xs uppercase tracking-wider2 text-ink/45">Avg. ₹/sq.ft. Trend</p>
+          <p className="text-xs uppercase tracking-wider2 text-ink/45">Avg. Rs./sq.ft. Trend</p>
           <p className="font-display text-2xl font-bold text-navy">5-Year Appreciation</p>
         </div>
         <span className="rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-semibold text-emerald-700">
@@ -25,7 +25,7 @@ export function PriceTrendChart({ data }: { data: Point[] }) {
           return (
             <div key={d.year} className="flex flex-1 flex-col items-center gap-2">
               <span className="text-[11px] font-semibold text-navy">
-                ₹{(d.price / 1000).toFixed(1)}k
+                Rs.{(d.price / 1000).toFixed(1)}k
               </span>
               <div
                 className={`w-full rounded-t-lg transition-all ${

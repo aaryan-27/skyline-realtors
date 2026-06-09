@@ -1,5 +1,5 @@
 -- ─────────────────────────────────────────────────────────────
--- Mahadev Properties — Supabase schema for lead capture
+-- DLF Privana Amraj Infra — Supabase schema for lead capture
 -- Run in the Supabase SQL editor (Project → SQL → New query)
 -- ─────────────────────────────────────────────────────────────
 

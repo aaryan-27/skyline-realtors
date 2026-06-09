@@ -9,8 +9,8 @@ import { Schema } from "@/components/seo/Schema";
 import { breadcrumbSchema, organizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Property Consultant in Sector 86, Gurgaon",
-  description: `Contact Mahadev Properties — call ${SITE.phone}, WhatsApp, or visit our office at ${SITE.address.full}. Book a free consultation or site visit today.`,
+  title: "Contact Us — Property Consultant in Sector 76, Gurgaon",
+  description: `Contact DLF Privana Amraj Infra — call ${SITE.phone}, WhatsApp, or visit our office at ${SITE.address.full}. Book a free consultation or site visit today.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -88,7 +88,7 @@ export default function ContactPage() {
             <div className="mt-4 grid grid-cols-2 gap-4">
               {OFFICE_IMAGES.map((src, i) => (
                 <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                  <Image src={src} alt={`Mahadev Properties office ${i + 1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
+                  <Image src={src} alt={`DLF Privana Amraj Infra office ${i + 1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
                 </div>
               ))}
             </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
         <div className="container">
           <div className="overflow-hidden rounded-3xl border border-navy/10 shadow-card">
             <iframe
-              title="Mahadev Properties office location"
+              title="DLF Privana Amraj Infra office location"
               src={SITE.mapsEmbed}
               width="100%"
               height="460"

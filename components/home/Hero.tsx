@@ -89,7 +89,7 @@ export function Hero() {
             className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/10 pt-8"
           >
             {[
-              { v: "₹1000Cr+", l: "Deals Closed" },
+              { v: "Rs.1000Cr+", l: "Deals Closed" },
               { v: "5000+", l: "Happy Buyers" },
               { v: "10+ Yrs", l: "Experience" },
             ].map((s) => (
