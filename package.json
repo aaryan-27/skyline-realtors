@@ -1,8 +1,8 @@
 {
-  "name": "gurugram-property",
+  "name": "gopal-estates",
   "version": "1.0.0",
   "private": true,
-  "description": "Gurugram Property — Luxury real estate advisory website for Gurgaon & Delhi NCR",
+  "description": "GOPAL ESTATES — Luxury real estate advisory website for Gurgaon & Delhi NCR",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

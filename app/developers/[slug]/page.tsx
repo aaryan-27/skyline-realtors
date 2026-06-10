@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!dev) return { title: "Developer Not Found" };
   return {
     title: `${dev.name} Projects in Gurgaon — History, Projects & Reviews`,
-    description: `${dev.name}: ${dev.tagline}. Founded ${dev.founded}. ${dev.about.slice(0, 120)}… Explore ${dev.name} projects in Gurgaon with DLF Privana Amraj Infra.`,
+    description: `${dev.name}: ${dev.tagline}. Founded ${dev.founded}. ${dev.about.slice(0, 120)}… Explore ${dev.name} projects in Gurgaon with GOPAL ESTATES.`,
     alternates: { canonical: `/developers/${dev.slug}` },
   };
 }

@@ -192,7 +192,7 @@ export function LeadForm({
         {isSubmitting ? "Submitting…" : cta}
       </button>
       <p className={cn("text-center text-[11px]", dark ? "text-white/40" : "text-ink/40")}>
-        By submitting, you agree to be contacted by DLF Privana Amraj Infra. Your data is
+        By submitting, you agree to be contacted by GOPAL ESTATES. Your data is
         secure &amp; never shared.
       </p>
     </form>

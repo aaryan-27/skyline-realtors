@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 /** Wordmark logo — a gold monogram lockup with serif wordmark. */
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
-    <Link href="/" className={cn("group inline-flex items-center gap-3", className)} aria-label="DLF Privana Amraj Infra — Home">
+    <Link href="/" className={cn("group inline-flex items-center gap-3", className)} aria-label="GOPAL ESTATES — Home">
       <span className="relative grid h-11 w-11 place-items-center rounded-lg bg-gold-gradient shadow-gold transition-transform duration-300 group-hover:scale-105">
-        <span className="font-display text-lg font-bold leading-none text-navy">AI</span>
+        <span className="font-display text-lg font-bold leading-none text-navy">GE</span>
         <span className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-inset ring-white/30" />
       </span>
       <span className="flex flex-col leading-none">
@@ -16,7 +16,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
             light ? "text-white" : "text-navy"
           )}
         >
-          DLF Privana <span className="text-gold-foil">Amraj Infra</span>
+          GOPAL <span className="text-gold-foil">ESTATES</span>
         </span>
         <span
           className={cn(
@@ -24,7 +24,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
             light ? "text-white/55" : "text-ink/50"
           )}
         >
-          Real Estate Advisory
+          Gurgaon Since 2008
         </span>
       </span>
     </Link>

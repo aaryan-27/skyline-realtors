@@ -5,36 +5,36 @@
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  name: "DLF Privana Amraj Infra",
-  legalName: "DLF Privana Amraj Infra Real Estate Advisory",
+  name: "GOPAL ESTATES Gurgaon Since 2008",
+  legalName: "GOPAL ESTATES Gurgaon Since 2008",
   tagline: "Your Trusted Partner for Real Estate Investments in Gurgaon",
   description:
-    "DLF Privana Amraj Infra is the trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
-  url: "https://www.amrajinfra.in",
-  phone: "+91 93102 03019",
-  phoneRaw: "919310203019",
-  whatsapp: "919310203019",
-  email: "info@amrajinfra.in",
-  mapsUrl: "https://maps.app.goo.gl/83qhTDcHRQXmEf5z6",
+    "GOPAL ESTATES Gurgaon Since 2008 is the trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
+  url: "https://www.gopalestates.in",
+  phone: "+91 98995 40456",
+  phoneRaw: "919899540456",
+  whatsapp: "919899540456",
+  email: "info@gopalestates.in",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=GOPAL%20ESTATES%20Gurgaon%20Since%202008&query_place_id=ChIJ-9YBmdIZDTkROJ0hOpIYpp4",
   mapsEmbed:
-    "https://www.google.com/maps?q=Suncity+Avenue+Sector+76+Gurugram&output=embed",
+    "https://www.google.com/maps?q=GOPAL+ESTATES+Gurgaon+Sector+6&output=embed",
   // Approximate — verify against your Google Business Profile pin.
-  geo: { lat: 28.3886, lng: 76.956 },
+  geo: { lat: 28.4595, lng: 77.0266 },
   address: {
-    street: "Shop No. 14, Suncity Avenue",
-    locality: "Sector 76",
+    street: "229/11 Link Road, More, near new colony, Bhim Nagar",
+    locality: "Sector 6",
     region: "Gurugram, Haryana",
-    postalCode: "122012",
+    postalCode: "122001",
     country: "IN",
-    full: "Shop No. 14, Suncity Avenue, Sector 76, Gurugram, Haryana 122012",
+    full: "229/11 Link Road, More, near new colony, Bhim Nagar, Sector 6, Gurugram, Haryana 122001, India",
   },
   hours: "Mon–Sun · 9:30 AM – 8:00 PM",
-  founded: "2014",
+  founded: "2008",
   social: {
-    instagram: "https://instagram.com/amrajinfra",
-    facebook: "https://facebook.com/amrajinfra",
-    youtube: "https://youtube.com/@amrajinfra",
-    linkedin: "https://linkedin.com/company/amrajinfra",
+    instagram: "https://instagram.com/gopalestates",
+    facebook: "https://facebook.com/gopalestates",
+    youtube: "https://youtube.com/@gopalestates",
+    linkedin: "https://linkedin.com/company/gopalestates",
   },
 } as const;
 
@@ -94,7 +94,7 @@ export const NAV_LINKS = [
 export function waLink(message?: string) {
   const text = encodeURIComponent(
     message ??
-      "Hi DLF Privana Amraj Infra, I'd like to know more about investment opportunities in Gurgaon."
+      "Hi GOPAL ESTATES, I'd like to know more about investment opportunities in Gurgaon."
   );
   return `https://wa.me/${SITE.whatsapp}?text=${text}`;
 }

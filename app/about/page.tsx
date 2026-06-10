@@ -13,7 +13,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us — Trusted Real Estate Advisors in Gurgaon",
   description:
-    "Learn about DLF Privana Amraj Infra — a decade of trusted, data-backed real estate advisory across Gurgaon, New Gurgaon & Dwarka Expressway. Rs.1000 Cr+ in deals, 5000+ happy clients.",
+    "Learn about GOPAL ESTATES — a decade of trusted, data-backed real estate advisory across Gurgaon, New Gurgaon & Dwarka Expressway. Rs.1000 Cr+ in deals, 5000+ happy clients.",
   alternates: { canonical: "/about" },
 };
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
               <div className="corner-frame relative overflow-hidden rounded-3xl">
                 <Image
                   src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
-                  alt="DLF Privana Amraj Infra advisory office"
+                  alt="GOPAL ESTATES advisory office"
                   width={1000}
                   height={1100}
                   className="h-full w-full object-cover"

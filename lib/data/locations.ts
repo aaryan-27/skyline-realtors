@@ -150,7 +150,7 @@ export const LOCATIONS: Location[] = [
     growthPotential: "High",
     infraRating: 4.2,
     overview:
-      "Sector 84 sits at the core of New Gurgaon within the Vatika India Next township. With established residential communities, an emerging SCO commercial belt and excellent NH-48 connectivity, Sector 84 is a balanced micro-market for both end-users and investors — minutes from our DLF Privana Amraj Infra office in nearby Sector 76.",
+      "Sector 84 sits at the core of New Gurgaon within the Vatika India Next township. With established residential communities, an emerging SCO commercial belt and excellent NH-48 connectivity, Sector 84 is a balanced micro-market for both end-users and investors — minutes from our GOPAL ESTATES office in Sector 6.",
     connectivity: [
       "Direct connectivity to NH-48 & Pataudi Road",
       "Minutes from Dwarka Expressway interchange",

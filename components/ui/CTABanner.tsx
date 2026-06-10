@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 /** Reusable conversion banner placed near the bottom of interior pages. */
 export function CTABanner({
   title = "Ready to make a smart property investment?",
-  subtitle = "Talk to a DLF Privana Amraj Infra advisor today — free, no-obligation guidance tailored to your budget and goals.",
+  subtitle = "Talk to a GOPAL ESTATES advisor today — free, no-obligation guidance tailored to your budget and goals.",
 }: {
   title?: string;
   subtitle?: string;

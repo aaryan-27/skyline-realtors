@@ -21,7 +21,7 @@ export default function Icon() {
           borderRadius: 12,
         }}
       >
-        AI
+        GE
       </div>
     ),
     { ...size }

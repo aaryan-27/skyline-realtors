@@ -19,9 +19,9 @@ export default function AppleIcon() {
           fontFamily: "Georgia, serif",
         }}
       >
-        <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1 }}>AI</div>
+        <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1 }}>GE</div>
         <div style={{ fontSize: 14, letterSpacing: 3, color: "#E9D3A6", marginTop: 8 }}>
-          AMRAJ INFRA
+          GOPAL ESTATES
         </div>
       </div>
     ),
