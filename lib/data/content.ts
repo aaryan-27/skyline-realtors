@@ -59,7 +59,7 @@ export const TESTIMONIALS: Testimonial[] = [
     location: "Invested in Dwarka Expressway",
     rating: 5,
     quote:
-      "As an NRI, I was nervous about investing remotely. S H Realty handled everything — verification, paperwork, even virtual site tours. My M3M apartment has already appreciated 22% in 18 months.",
+      "As an NRI, I was nervous about investing remotely. Crossroad Consultant Inc handled everything — verification, paperwork, even virtual site tours. My M3M apartment has already appreciated 22% in 18 months.",
     invested: "M3M Crown · Rs.4.1 Cr",
     initials: "RM",
     videoThumb:

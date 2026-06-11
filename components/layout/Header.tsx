@@ -25,8 +25,8 @@ export function Header() {
     setOpen(false);
   }, [pathname]);
 
-  // Home page has a dark hero — header starts transparent/light there.
-  const onDarkHero = pathname === "/" && !scrolled;
+  // All pages have a dark hero — header starts transparent over it until scrolled.
+  const onDarkHero = !scrolled;
 
   return (
     <header
