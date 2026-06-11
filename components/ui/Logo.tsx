@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 /** Wordmark logo — a gold monogram lockup with serif wordmark. */
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
-    <Link href="/" className={cn("group inline-flex items-center gap-3", className)} aria-label="Shagun Real Estate — Home">
+    <Link href="/" className={cn("group inline-flex items-center gap-3", className)} aria-label="Skyline Realtors — Home">
       <span className="relative grid h-11 w-11 place-items-center rounded-lg bg-gold-gradient shadow-gold transition-transform duration-300 group-hover:scale-105">
         <span className="font-display text-lg font-bold leading-none text-navy">SR</span>
         <span className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-inset ring-white/30" />
@@ -16,7 +16,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
             light ? "text-white" : "text-navy"
           )}
         >
-          Shagun <span className="text-gold-foil">Real Estate</span>
+          Skyline <span className="text-gold-foil">Realtors</span>
         </span>
         <span
           className={cn(

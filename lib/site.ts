@@ -5,36 +5,36 @@
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  name: "Shagun Real Estate",
-  legalName: "Shagun Real Estate | Property Dealer | Real Estate Consultant Gurugram",
+  name: "Skyline Realtors",
+  legalName: "Skyline Realtors | Property Dealer | Real Estate Consultant Gurugram",
   tagline: "Your Trusted Partner for Real Estate Investments in Gurgaon",
   description:
-    "Shagun Real Estate is the trusted property dealer and real estate consultant for Gurugram, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
-  url: "https://www.shagunrealestate.in",
-  phone: "+91 88001 15214",
-  phoneRaw: "918800115214",
-  whatsapp: "918800115214",
-  email: "info@shagunrealestate.in",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Shagun%20Real%20Estate&query_place_id=ChIJs3ogqjgXDTkRCrp_gBxTul8",
+    "Skyline Realtors is the trusted property dealer and real estate consultant for Gurugram, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
+  url: "https://www.skylinerealtors.in",
+  phone: "+91 98996 27867",
+  phoneRaw: "919899627867",
+  whatsapp: "919899627867",
+  email: "info@skylinerealtors.in",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Skyline%20Realtors&query_place_id=ChIJAdE29asZDTkRBoHIf_jPk9g",
   mapsEmbed:
-    "https://www.google.com/maps?q=Shagun+Real+Estate+Sector+102+Gurugram&output=embed",
+    "https://www.google.com/maps?q=Skyline+Realtors+Sector+22+Gurugram&output=embed",
   // Approximate — verify against your Google Business Profile pin.
   geo: { lat: 28.4897, lng: 76.9822 },
   address: {
-    street: "ROF aalayas, 75meter road, Northern Peripheral Rd",
-    locality: "Sector 102, Gurugram",
+    street: "Shop No. 121, HUDA Market, opposite Rotary Public School, Mullahera",
+    locality: "Sector 22, Gurugram",
     region: "Gurugram, Haryana",
-    postalCode: "122505",
+    postalCode: "122015",
     country: "IN",
-    full: "ROF aalayas, 75meter road, Northern Peripheral Rd, Sector 102, Gurugram, Haryana 122505, India",
+    full: "Shop No. 121, HUDA Market, opposite Rotary Public School, Mullahera, Sector 22, Gurugram, Haryana 122015, India",
   },
   hours: "Mon–Sun · 9:30 AM – 8:00 PM",
   founded: "2008",
   social: {
-    instagram: "https://instagram.com/shagunrealestate",
-    facebook: "https://facebook.com/shagunrealestate",
-    youtube: "https://youtube.com/@shagunrealestate",
-    linkedin: "https://linkedin.com/company/shagunrealestate",
+    instagram: "https://instagram.com/skylinerealtors",
+    facebook: "https://facebook.com/skylinerealtors",
+    youtube: "https://youtube.com/@skylinerealtors",
+    linkedin: "https://linkedin.com/company/skylinerealtors",
   },
 } as const;
 
@@ -94,7 +94,7 @@ export const NAV_LINKS = [
 export function waLink(message?: string) {
   const text = encodeURIComponent(
     message ??
-      "Hi Shagun Real Estate, I'd like to know more about investment opportunities in Gurgaon."
+      "Hi Skyline Realtors, I'd like to know more about investment opportunities in Gurgaon."
   );
   return `https://wa.me/${SITE.whatsapp}?text=${text}`;
 }
