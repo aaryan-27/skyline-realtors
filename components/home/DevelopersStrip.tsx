@@ -12,13 +12,13 @@ export function DevelopersStrip() {
     <section className="section bg-white">
       <div className="container">
         <SectionHeading
-          eyebrow="Preferred Channel Partner"
+          eyebrow="Trusted Builder Partners"
           title={
             <>
-              Direct relationships with <span className="text-gold-foil">India&apos;s top developers</span>
+              Title-clear inventory from <span className="text-gold-foil">trusted local builders</span>
             </>
           }
-          subtitle="Preferred-partner access means best inventory, priority allotments and exclusive launch pricing — across 50+ leading developers."
+          subtitle="We work with established builders across Palam Vihar and Sectors 21–23 — bringing you verified builder floors, flats and plots at the right price."
         />
       </div>
 
@@ -49,7 +49,7 @@ export function DevelopersStrip() {
 
       <div className="container mt-12 text-center">
         <Link href="/developers" className="btn-outline">
-          Explore All Developers
+          Explore All Builder Partners
         </Link>
       </div>
     </section>

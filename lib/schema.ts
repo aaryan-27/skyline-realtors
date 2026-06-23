@@ -41,7 +41,7 @@ export function organizationSchema() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "486",
+      reviewCount: "180",
       bestRating: "5",
     },
   };

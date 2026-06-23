@@ -13,18 +13,18 @@ export function LeadSection() {
         <Reveal>
           <span className="eyebrow !text-gold-300 mb-5">Free, No-Obligation Consultation</span>
           <h2 className="font-display text-3xl leading-tight text-white text-balance sm:text-4xl md:text-[2.75rem]">
-            Get expert advice on your <span className="text-gold-foil">next property investment</span>
+            Get expert advice on your <span className="text-gold-foil">next property move</span>
           </h2>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70">
-            Share your requirement and our investment advisor will call you within
-            2 working hours with handpicked, verified options matched to your budget
-            and goals — across residential, commercial and SCO.
+            Share your requirement and our advisor will call you within
+            2 working hours with handpicked, title-verified options matched to your
+            budget and goals — builder floors, flats and plots across Gurgaon.
           </p>
 
           <ul className="mt-8 space-y-4">
             {[
-              { icon: ShieldCheck, text: "100% RERA-verified, due-diligenced projects only" },
-              { icon: Award, text: "Best-price guarantee via direct developer tie-ups" },
+              { icon: ShieldCheck, text: "Title-verified, due-diligenced properties only" },
+              { icon: Award, text: "Right-price guidance via trusted builder tie-ups" },
               { icon: Clock, text: "End-to-end support — site visit to registry" },
             ].map(({ icon: Icon, text }) => (
               <li key={text} className="flex items-center gap-3 text-sm text-white/80">

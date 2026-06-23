@@ -13,19 +13,19 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { COMMERCIAL_PROJECTS } from "@/lib/data/projects";
 
 export const metadata: Metadata = {
-  title: "Commercial Property in Gurgaon — Office, Retail & SCO Plots",
+  title: "Commercial Property in Gurgaon — Shops & Offices in Palam Vihar",
   description:
-    "Invest in commercial property in Gurgaon — office spaces, retail shops, SCO plots, food courts & business parks. Use our ROI & rental-yield calculators and get an investment analysis.",
+    "Invest in commercial property in Gurgaon — retail shops, showrooms and office units in established markets across Palam Vihar and Sectors 21–23. Use our ROI & rental-yield calculators and get an investment analysis.",
   alternates: { canonical: "/commercial" },
-  keywords: ["Commercial Property Gurgaon", "SCO Plots Gurgaon", "Office Space Gurgaon", "Retail Shops Gurgaon"],
+  keywords: ["Commercial Property Gurgaon", "Shops in Sector 22 Gurgaon", "Office Space Palam Vihar", "Retail Shops Gurgaon"],
 };
 
 const CATEGORIES = [
-  { icon: Briefcase, title: "Office Spaces", desc: "Grade-A floor plates & pre-leased units with assured rental income." },
-  { icon: Store, title: "Retail Shops", desc: "High-street retail in dense, premium residential catchments." },
-  { icon: LayoutGrid, title: "SCO Plots", desc: "100% freehold Shop-Cum-Office plots — build, lease & own outright." },
-  { icon: UtensilsCrossed, title: "Food Courts", desc: "High-footfall F&B units in landmark commercial destinations." },
-  { icon: Building2, title: "Business Parks", desc: "Integrated work environments with institutional-grade tenants." },
+  { icon: Store, title: "Retail Shops", desc: "High-street shops in established, high-footfall HUDA markets." },
+  { icon: Briefcase, title: "Office Units", desc: "Compact, well-located office units in busy commercial pockets." },
+  { icon: LayoutGrid, title: "Showrooms", desc: "Main-road showrooms with strong frontage and visibility." },
+  { icon: UtensilsCrossed, title: "Pre-leased Units", desc: "Rented shops and offices offering ready, assured rental income." },
+  { icon: Building2, title: "Neighbourhood Complexes", desc: "Shop-and-office complexes serving dense residential catchments." },
 ];
 
 export default function CommercialPage() {
@@ -48,8 +48,8 @@ export default function CommercialPage() {
             Commercial <span className="text-gold-foil">Investments</span> in Gurgaon
           </>
         }
-        subtitle="Office spaces, retail shops, SCO plots and food courts engineered for rental income and capital growth — with full investment analysis, ROI projections and leasing support."
-        image="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+        subtitle="Retail shops, showrooms and office units in established Gurgaon markets — chosen for rental income and steady appreciation, with full investment analysis, ROI projections and leasing support."
+        image="/photos/p045.jpg"
       />
 
       {/* Category cards */}
@@ -98,9 +98,9 @@ export default function CommercialPage() {
       <section className="section bg-navy text-white">
         <div className="container grid gap-10 lg:grid-cols-3">
           {[
-            { stat: "8–10%", label: "SCO Rental Yields", desc: "Among the highest-yielding commercial assets in Gurgaon." },
-            { stat: "14–18%", label: "Total Annual ROI", desc: "On well-located SCO & high-street retail in growth corridors." },
-            { stat: "100%", label: "Freehold Ownership", desc: "SCO plots give you outright land + building ownership." },
+            { stat: "5–7%", label: "Rental Yields", desc: "Steady yields on shops in established, high-footfall markets." },
+            { stat: "9–13%", label: "Total Annual ROI", desc: "On well-located retail and office units in prime localities." },
+            { stat: "100%", label: "Title-Clear", desc: "Every commercial unit we deal in is title-verified and due-diligenced." },
           ].map((s, i) => (
             <Reveal key={s.label} delay={i * 0.1}>
               <div className="flex items-start gap-4">

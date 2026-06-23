@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = `${SITE.name} — Luxury Real Estate Advisory in Gurgaon`;
+export const alt = `${SITE.name} — Builder Floors, Flats & Plots in Gurgaon`;
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -35,33 +35,33 @@ export default function OpengraphImage() {
               fontWeight: 800,
             }}
           >
-            CC
+            SR
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 30, color: "#FFFFFF", fontWeight: 700 }}>
               Skyline Realtors
             </div>
             <div style={{ fontSize: 16, color: "#9FB3D1", letterSpacing: 4 }}>
-              REAL ESTATE ADVISORY
+              PROPERTY DEALER · GURGAON
             </div>
           </div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 30, color: "#CDA45E", letterSpacing: 6, marginBottom: 16 }}>
-            GURGAON · DWARKA EXPRESSWAY · DELHI NCR
+          <div style={{ fontSize: 28, color: "#CDA45E", letterSpacing: 6, marginBottom: 16 }}>
+            PALAM VIHAR · SECTOR 21 · 22 · 23
           </div>
           <div style={{ fontSize: 68, color: "#FFFFFF", fontWeight: 800, lineHeight: 1.05 }}>
-            Find Your Perfect Property
+            Builder Floors, Flats &amp; Plots
           </div>
           <div style={{ fontSize: 68, color: "#CDA45E", fontWeight: 800, lineHeight: 1.05 }}>
-            Investment in Gurgaon
+            in Gurgaon
           </div>
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontSize: 24, color: "#C9D6E8" }}>
-            1000 Cr+ Deals · 5000+ Buyers · 10+ Years
+            350+ Properties Sold · 500+ Families · Since 2021
           </div>
           <div style={{ fontSize: 24, color: "#E9D3A6", fontWeight: 700 }}>
             {SITE.phone}

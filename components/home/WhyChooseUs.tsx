@@ -32,7 +32,7 @@ export function WhyChooseUs() {
               Advisory you can trust, <span className="text-gold-foil">results you can measure</span>
             </>
           }
-          subtitle="We act as your investment advisor — not just a broker. Every recommendation is verified, researched and aligned with your financial goals."
+          subtitle="We're your trusted local partner — not just a broker. Every property is title-verified and every recommendation is honest, transparent and aligned with your goals."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

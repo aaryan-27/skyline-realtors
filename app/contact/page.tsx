@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 };
 
 const OFFICE_IMAGES = [
-  "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80",
+  "/photos/p069.jpg",
+  "/photos/p090.jpg",
 ];
 
 export default function ContactPage() {
@@ -36,7 +36,7 @@ export default function ContactPage() {
         ]}
         eyebrow="Let's Talk"
         title={<>Get in <span className="text-gold-foil">Touch</span></>}
-        subtitle="Visit our office in the heart of New Gurgaon, or reach us by phone and WhatsApp. Our advisors are ready to help you find the right property investment."
+        subtitle="Visit our office in Sector 22, Gurgaon, or reach us by phone and WhatsApp. Our team is ready to help you buy, sell or invest in the right property."
       />
 
       <section className="section bg-cloud">

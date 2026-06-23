@@ -27,9 +27,9 @@ export function Footer() {
       <div className="relative border-b border-white/10">
         <div className="container flex flex-col items-center justify-between gap-6 py-12 text-center md:flex-row md:text-left">
           <div>
-            <p className="eyebrow !text-gold-300 mb-3">Ready to Invest?</p>
+            <p className="eyebrow !text-gold-300 mb-3">Ready to Move?</p>
             <h3 className="font-display text-2xl text-white md:text-3xl">
-              Let&apos;s find your next high-growth property.
+              Let&apos;s find your perfect property in Gurgaon.
             </h3>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -48,9 +48,10 @@ export function Footer() {
         <div className="lg:col-span-4">
           <Logo light />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/60">
-            {SITE.tagline}. A decade of trusted advisory across Gurgaon, New Gurgaon,
-            Dwarka Expressway &amp; Delhi NCR — helping 5,000+ buyers and investors
-            build wealth through real estate.
+            {SITE.tagline}. A trusted property dealer in Gurgaon since 2021,
+            specialising in premium builder floors, flats and plots across Palam
+            Vihar and Sectors 21–23 — helping hundreds of families and investors
+            buy, sell and invest with confidence.
           </p>
           <div className="mt-6 flex gap-3">
             {[
@@ -89,7 +90,7 @@ export function Footer() {
 
         {/* Locations */}
         <div className="lg:col-span-3">
-          <h4 className="mb-5 font-display text-base text-white">Investment Hotspots</h4>
+          <h4 className="mb-5 font-display text-base text-white">Our Localities</h4>
           <ul className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
             {LOCATIONS.slice(0, 8).map((l) => (
               <li key={l.slug}>
@@ -102,7 +103,7 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <h4 className="mb-4 mt-7 font-display text-base text-white">Top Developers</h4>
+          <h4 className="mb-4 mt-7 font-display text-base text-white">Trusted Builders</h4>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
             {DEVELOPERS.slice(0, 6).map((d) => (
               <li key={d.slug}>

@@ -98,14 +98,14 @@ export function ExitIntentPopup() {
               <div className="relative">
                 <span className="eyebrow !text-gold-300">Free Download</span>
                 <h3 className="mt-4 font-display text-3xl leading-tight">
-                  Top 10 Property Investment Opportunities in Gurgaon 2026
+                  Buyer&apos;s Guide to Builder Floors, Flats &amp; Plots in Gurgaon 2026
                 </h3>
               </div>
               <ul className="relative space-y-3 text-sm text-white/80">
                 {[
-                  "Corridor-by-corridor price & yield data",
-                  "Pre-launch projects with best upside",
-                  "Expert entry & exit timing strategy",
+                  "Locality-by-locality price & yield data",
+                  "Title checks & paperwork made simple",
+                  "How to buy and sell at the right price",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

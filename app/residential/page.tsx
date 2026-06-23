@@ -9,18 +9,18 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { RESIDENTIAL_PROJECTS } from "@/lib/data/projects";
 
 export const metadata: Metadata = {
-  title: "Residential Projects in Gurgaon — Luxury Apartments & Floors",
+  title: "Residential Property in Gurgaon — Builder Floors, Flats & Plots",
   description:
-    "Explore RERA-verified luxury apartments, builder floors and residential projects in Gurgaon, New Gurgaon & Dwarka Expressway. Filter by budget, location, builder & possession.",
+    "Explore title-verified builder floors, flats and residential plots in Palam Vihar and Sectors 21–23, Gurgaon. Filter by budget, location, builder & possession.",
   alternates: { canonical: "/residential" },
-  keywords: ["Luxury Apartments Gurgaon", "Residential Projects Gurgaon", "Builder Floors Gurgaon", "New Gurgaon Property"],
+  keywords: ["Builder Floors Palam Vihar", "Flats in Sector 23 Gurgaon", "Residential Plots Gurgaon", "Property in Palam Vihar"],
 };
 
 const HIGHLIGHTS = [
-  { icon: Home, label: "Luxury Apartments", value: "3 & 4 BHK" },
-  { icon: Layers, label: "Builder Floors", value: "Low Density" },
-  { icon: Building2, label: "Sky Villas", value: "Premium" },
-  { icon: TreePine, label: "Plots", value: "Freehold" },
+  { icon: Layers, label: "Builder Floors", value: "2–4 BHK" },
+  { icon: Home, label: "Independent Flats", value: "Gated" },
+  { icon: TreePine, label: "Residential Plots", value: "Clear Title" },
+  { icon: Building2, label: "Ready to Move", value: "Available" },
 ];
 
 export default function ResidentialPage() {
@@ -37,14 +37,14 @@ export default function ResidentialPage() {
           { name: "Home", href: "/" },
           { name: "Residential", href: "/residential" },
         ]}
-        eyebrow="Luxury Living in Gurgaon"
+        eyebrow="Homes in Gurgaon"
         title={
           <>
-            Residential <span className="text-gold-foil">Projects</span> in Gurgaon
+            Residential <span className="text-gold-foil">Property</span> in Gurgaon
           </>
         }
-        subtitle="Handpicked, RERA-verified luxury apartments, builder floors and sky villas across Gurgaon's most sought-after corridors — with floor plans, price lists and site visits on request."
-        image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80"
+        subtitle="Handpicked, title-verified builder floors, flats and plots across Palam Vihar and Sectors 21–23 — with layouts, price lists and site visits on request."
+        image="/photos/p086.jpg"
       >
         <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4">
           {HIGHLIGHTS.map((h) => (

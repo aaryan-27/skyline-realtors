@@ -10,9 +10,9 @@ import { Schema } from "@/components/seo/Schema";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Investment Locations in Gurgaon — Corridor-wise Analysis",
+  title: "Property Locations in Gurgaon — Palam Vihar & Sectors 21–23",
   description:
-    "Explore Gurgaon's top investment corridors — Dwarka Expressway, Golf Course Extension, SPR Road, Sohna Road & New Gurgaon. Compare prices, rental yields and growth potential.",
+    "Explore Gurgaon's most established residential micro-markets — Palam Vihar, Palam Vihar Extension, Sector 21, Sector 22 and Sector 23. Compare builder-floor and plot prices, rental yields and growth potential.",
   alternates: { canonical: "/locations" },
 };
 
@@ -39,11 +39,11 @@ export default function LocationsPage() {
         eyebrow="Micro-Market Intelligence"
         title={
           <>
-            Gurgaon&apos;s Top <span className="text-gold-foil">Investment Corridors</span>
+            Our Prime <span className="text-gold-foil">Gurgaon Localities</span>
           </>
         }
-        subtitle="Deep-dive into each corridor's pricing, rental yield, infrastructure and growth outlook — so you invest where the data points to the strongest returns."
-        image="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=2000&q=80"
+        subtitle="Deep local knowledge of Palam Vihar and Sectors 21, 22 & 23 — explore each locality's pricing, rental yield, infrastructure and growth outlook so you buy and invest with confidence."
+        image="/photos/p079.jpg"
       />
 
       <section className="section bg-cloud">
@@ -100,7 +100,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      <CTABanner title="Not sure which corridor fits your goals?" subtitle="Our advisors will match you to the right micro-market based on your budget, horizon and risk appetite." />
+      <CTABanner title="Not sure which locality fits your goals?" subtitle="Our advisors will match you to the right Palam Vihar or sector micro-market based on your budget, timeline and needs." />
     </>
   );
 }

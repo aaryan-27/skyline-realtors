@@ -15,6 +15,9 @@ next-env.d.ts
 .DS_Store
 *.pem
 
+# raw source photo dump (duplicated by public/photos, which is served)
+/Photos
+
 # debug
 npm-debug.log*
 yarn-debug.log*

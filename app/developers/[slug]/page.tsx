@@ -61,7 +61,7 @@ export default async function DeveloperPage({
       >
         <div className="mt-10 grid max-w-2xl grid-cols-3 gap-4">
           {[
-            { value: `${dev.completed}M+`, label: "Sq.ft. Delivered" },
+            { value: `${dev.completed}+`, label: "Projects Delivered" },
             { value: dev.ongoing, label: "Ongoing Projects" },
             { value: dev.founded, label: "Established" },
           ].map((s) => (
@@ -132,7 +132,7 @@ export default async function DeveloperPage({
                 Get the latest {dev.name} inventory, pricing &amp; launch offers.
               </p>
               <ul className="mt-5 space-y-3 text-sm text-white/75">
-                {["Preferred-partner pricing", "Priority unit allotment", "Pre-launch access"].map((b) => (
+                {["Verified builder credentials", "Title-clear inventory", "Best on-ground pricing"].map((b) => (
                   <li key={b} className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-gold" /> {b}
                   </li>

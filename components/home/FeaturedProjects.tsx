@@ -18,7 +18,7 @@ export function FeaturedProjects() {
                 Featured <span className="text-gold-foil">Premium Projects</span>
               </>
             }
-            subtitle="A curated selection across residential, commercial, SCO and luxury floors — verified, RERA-checked and chosen for genuine investment potential."
+            subtitle="A handpicked selection of builder floors, flats and plots across Palam Vihar and Sectors 21–23 — title-verified and chosen for genuine value and livability."
           />
           <Reveal delay={0.1}>
             <Link

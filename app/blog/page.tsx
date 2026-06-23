@@ -11,7 +11,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Gurgaon Real Estate Blog — Market Insights & Investment Guides",
   description:
-    "Expert insights on Gurgaon real estate — market reports, investment guides, project reviews, commercial trends, luxury homes and NRI investment advice.",
+    "Expert insights on Gurgaon real estate — market reports, buying and selling guides, builder-floor and plot advice, and locality guides for Palam Vihar and Sectors 21–23.",
   alternates: { canonical: "/blog" },
 };
 
@@ -37,7 +37,7 @@ export default function BlogPage() {
         ]}
         eyebrow="Insights & Intelligence"
         title={<>Gurgaon Real Estate <span className="text-gold-foil">Insights</span></>}
-        subtitle="Data-backed market reports, investment guides and project reviews from our research desk — to help you invest smarter."
+        subtitle="Local market reports, buying and selling guides, and locality insights from our team — to help you buy, sell and invest smarter in Gurgaon."
       />
 
       <section className="section bg-cloud">

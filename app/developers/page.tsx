@@ -10,9 +10,9 @@ import { Schema } from "@/components/seo/Schema";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Top Real Estate Developers in Gurgaon — DLF, M3M, Godrej & More",
+  title: "Trusted Builder Partners in Gurgaon — Palam Vihar & Sectors 21–23",
   description:
-    "Explore Gurgaon's leading developers — DLF, M3M, Smart World, Godrej, Experion, Signature Global, Elan, Sobha & more. History, projects, achievements and current inventory.",
+    "Meet the trusted local builders whose builder floors, flats and plots we deal in across Palam Vihar and Sectors 21–23. History, projects, achievements and current inventory.",
   alternates: { canonical: "/developers" },
 };
 
@@ -30,10 +30,10 @@ export default function DevelopersPage() {
           { name: "Home", href: "/" },
           { name: "Developers", href: "/developers" },
         ]}
-        eyebrow="Preferred Channel Partner"
-        title={<>India&apos;s Leading <span className="text-gold-foil">Developers</span></>}
-        subtitle="We hold direct, preferred-partner relationships with Gurgaon's top developers — giving you best inventory, priority allotments and exclusive launch pricing."
-        image="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2000&q=80"
+        eyebrow="Trusted Builder Partners"
+        title={<>Our Trusted <span className="text-gold-foil">Builder Partners</span></>}
+        subtitle="We work with established local builders across Palam Vihar and Sectors 21–23 — giving you access to title-clear builder floors, flats and plots at the right price."
+        image="/photos/p095.jpg"
       />
 
       <section className="section bg-cloud">
@@ -64,7 +64,7 @@ export default function DevelopersPage() {
                   <div className="mt-6 flex items-center justify-between border-t border-navy/5 pt-5">
                     <div className="flex gap-5 text-sm">
                       <span className="flex items-center gap-1.5 text-ink/65">
-                        <Building2 className="h-4 w-4 text-gold-600" /> {d.completed}M+ sq.ft.
+                        <Building2 className="h-4 w-4 text-gold-600" /> {d.completed}+ delivered
                       </span>
                       <span className="flex items-center gap-1.5 text-ink/65">
                         <Award className="h-4 w-4 text-gold-600" /> {count} listed
@@ -79,7 +79,7 @@ export default function DevelopersPage() {
         </div>
       </section>
 
-      <CTABanner title="Looking for a specific developer's project?" subtitle="We have direct access to inventory across all major Gurgaon developers — including pre-launch and off-market opportunities." />
+      <CTABanner title="Looking for a specific builder's property?" subtitle="We have access to title-clear builder floors, flats and plots across our partner builders — including resale and off-market opportunities." />
     </>
   );
 }

@@ -1,6 +1,6 @@
-# Agarwal Realtors — Luxury Real Estate Advisory
+# Skyline Realtors — Property Dealer in Gurgaon
 
-A premium, conversion-optimised, SEO-first website for **Agarwal Realtors**, positioning the company as the most trusted real estate investment consultant for Gurgaon, New Gurgaon, Dwarka Expressway and Delhi NCR.
+A premium, conversion-optimised, SEO-first website for **Skyline Realtors**, positioning the company as a trusted property dealer and real estate consultant in Gurgaon — specialising in premium builder floors, flats, plots and investment opportunities across Palam Vihar and Sectors 21, 22 & 23.
 
 Built with **Next.js 15 (App Router) · TypeScript · Tailwind CSS · Framer Motion**.
 
@@ -13,11 +13,11 @@ Built with **Next.js 15 (App Router) · TypeScript · Tailwind CSS · Framer Mot
 |---|---|
 | `/` | Home — hero, animated stats, featured projects, why-us, interactive hotspots, developer marquee, testimonials, lead capture |
 | `/about` | Company story, mission/vision/values, team, milestones timeline, founder message, awards, office gallery |
-| `/residential` | Filterable luxury apartments, floors & plots (budget / location / builder / type / possession) |
-| `/commercial` | Office, retail, SCO, food courts + **EMI & ROI calculators** + investment analysis |
+| `/residential` | Filterable builder floors, flats & plots (budget / location / builder / type / possession) |
+| `/commercial` | Shops, showrooms, office units + **EMI & ROI calculators** + investment analysis |
 | `/projects/[slug]` | 12 project detail pages — gallery + lightbox, configurations & price list, amenities, payment plan, builder, map, FAQ, sticky enquiry form |
-| `/locations/[slug]` | 10 SEO location pages — overview, connectivity, infra, schools, hospitals, malls, **price-trend chart**, investment analysis, FAQs |
-| `/developers/[slug]` | 10 developer pages — history, achievements, awards, signature projects, listings |
+| `/locations/[slug]` | 6 SEO locality pages (Palam Vihar, Palam Vihar Extension, Sectors 21/22/23/23A) — overview, connectivity, infra, schools, hospitals, markets, **price-trend chart**, locality analysis, FAQs |
+| `/developers/[slug]` | 8 builder-partner pages — history, achievements, awards, signature projects, listings |
 | `/blog` + `/blog/[slug]` | 6 SEO articles with categories, related posts, social sharing, newsletter |
 | `/contact` | NAP, contact cards, Google Maps embed, office gallery, booking form |
 | `/privacy` `/terms` `/disclaimer` | Legal pages |
@@ -25,7 +25,7 @@ Built with **Next.js 15 (App Router) · TypeScript · Tailwind CSS · Framer Mot
 
 ### Premium features
 - **Floating WhatsApp button** + **sticky mobile bottom nav** (Call / WhatsApp / Site Visit / Directions)
-- **Exit-intent popup** lead magnet ("Top 10 Investment Opportunities 2026") with desktop mouse-leave + mobile scroll-depth triggers
+- **Exit-intent popup** lead magnet ("Buyer's Guide to Builder Floors, Flats & Plots 2026") with desktop mouse-leave + mobile scroll-depth triggers
 - **EMI calculator** & **ROI/appreciation calculator** (live, investor-grade)
 - Advanced **dynamic project filtering** with animated grid
 - **Image gallery + lightbox** on project pages
@@ -119,4 +119,4 @@ supabase/schema.sql  # leads table
 ## ✅ Notes
 - Every page carries a sticky WhatsApp/Call CTA, a lead form or CTA banner, trust signals and the developer/contact footer per the conversion brief.
 - RERA numbers, prices and projects shown are illustrative placeholders — verify before publishing.
-- Built to rank for: *Property Dealer Gurgaon, Real Estate Consultant Gurgaon, Luxury Apartments Gurgaon, Dwarka Expressway Property, SCO Plots Gurgaon* and related terms.
+- Built to rank for: *Property Dealer Gurgaon, Property Dealer Palam Vihar, Builder Floors Palam Vihar, Flats in Sector 23 Gurgaon, Plots in Palam Vihar* and related terms.

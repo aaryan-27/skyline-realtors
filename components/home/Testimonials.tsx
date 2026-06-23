@@ -20,13 +20,13 @@ export function Testimonials() {
       <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-gold/5 blur-3xl" />
       <div className="container relative">
         <SectionHeading
-          eyebrow="Client Investment Journeys"
+          eyebrow="Client Stories"
           title={
             <>
-              Trusted by <span className="text-gold-foil">5,000+ buyers &amp; investors</span>
+              Trusted by <span className="text-gold-foil">hundreds of families &amp; investors</span>
             </>
           }
-          subtitle="Real stories from families, NRIs and investors who built wealth with our guidance — backed by genuine Google reviews."
+          subtitle="Real stories from families and investors who bought, sold and invested with confidence through our guidance — backed by genuine Google reviews."
         />
 
         <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-12">
@@ -136,7 +136,7 @@ export function Testimonials() {
                       <Star key={i} className="h-4 w-4 fill-gold text-gold" />
                     ))}
                   </div>
-                  <p className="text-xs text-ink/50">486 Google Reviews</p>
+                  <p className="text-xs text-ink/50">180+ Google Reviews</p>
                 </div>
               </div>
               <p className="mt-3 text-sm text-ink/60">

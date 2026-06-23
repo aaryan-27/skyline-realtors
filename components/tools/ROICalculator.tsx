@@ -77,8 +77,9 @@ export function ROICalculator() {
           </div>
         </div>
         <p className="mt-5 rounded-xl bg-cloud p-3 text-[11px] text-ink/55">
-          Tip: Dwarka Expressway has historically delivered 15–22% appreciation;
-          SCO plots, 8–10% rental yields. Adjust to your target asset.
+          Tip: established Gurgaon colonies like Palam Vihar have historically
+          delivered steady 8–12% appreciation; plots often more. Adjust to your
+          target property.
         </p>
       </div>
 

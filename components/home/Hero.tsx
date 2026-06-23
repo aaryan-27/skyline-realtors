@@ -21,7 +21,7 @@ export function Hero() {
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+        poster="/photos/p085.jpg"
       >
         <source src="/hero.mp4" type="video/mp4" />
       </video>
@@ -42,30 +42,30 @@ export function Hero() {
               ))}
             </span>
             <span className="text-xs font-medium text-white/80">
-              Rated 4.9/5 by 480+ buyers &amp; investors
+              Rated 4.9/5 by 180+ families &amp; investors
             </span>
           </motion.div>
 
           <motion.p {...fade(0.2)} className="eyebrow !text-gold-300 mb-5">
-            Gurgaon · New Gurgaon · Dwarka Expressway · Delhi NCR
+            Palam Vihar · Sector 21 · Sector 22 · Sector 23
           </motion.p>
 
           <motion.h1
             {...fade(0.3)}
             className="font-display text-4xl font-bold leading-[1.05] text-white text-balance sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Find Your Perfect <br />
-            <span className="text-gold-foil">Property Investment</span> <br />
-            in Gurgaon
+            Find the Perfect <br />
+            <span className="text-gold-foil">Place to Build</span> <br />
+            Your Future
           </motion.h1>
 
           <motion.p
             {...fade(0.45)}
             className="mt-6 max-w-xl text-base leading-relaxed text-white/75 text-pretty md:text-lg"
           >
-            Explore luxury homes, commercial spaces, SCO plots and high-growth
-            investment opportunities — guided by a decade of trusted, data-backed
-            advisory across Gurugram&apos;s top corridors.
+            Explore premium builder floors, flats, plots and high-return
+            investment opportunities — guided by trusted, transparent advice and
+            deep local expertise across Palam Vihar and Gurgaon since 2021.
           </motion.p>
 
           <motion.div {...fade(0.6)} className="mt-9 flex flex-wrap items-center gap-3">
@@ -89,9 +89,9 @@ export function Hero() {
             className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/10 pt-8"
           >
             {[
-              { v: "Rs.1000Cr+", l: "Deals Closed" },
-              { v: "5000+", l: "Happy Buyers" },
-              { v: "10+ Yrs", l: "Experience" },
+              { v: "350+", l: "Properties Sold" },
+              { v: "500+", l: "Happy Families" },
+              { v: "Since 2021", l: "Trusted Locally" },
             ].map((s) => (
               <div key={s.l}>
                 <p className="font-display text-2xl font-bold text-white md:text-3xl">{s.v}</p>

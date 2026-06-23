@@ -90,7 +90,7 @@ export default async function LocationPage({
           { name: "Locations", href: "/locations" },
           { name: loc.name, href: `/locations/${loc.slug}` },
         ]}
-        eyebrow="Investment Corridor"
+        eyebrow="Locality Guide"
         title={<><span className="text-gold-foil">{loc.name}</span> Property Guide</>}
         subtitle={loc.tagline}
         image={loc.heroImage}

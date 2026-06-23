@@ -57,7 +57,7 @@ const PAYMENT_PLANS = [
 const FALLBACK_FAQS = (name: string) => [
   { q: `Is ${name} RERA-approved?`, a: `Yes. ${name} is registered under HARERA. We share the full RERA registration and all approvals during your consultation.` },
   { q: `What is the payment plan for ${name}?`, a: `${name} offers flexible construction-linked and possession-linked payment plans. Our advisors will walk you through the best option and any current offers.` },
-  { q: `Can I book a site visit for ${name}?`, a: `Absolutely. We arrange complimentary, chauffeured site visits — including virtual tours for NRI and outstation buyers. Just request a visit and we'll schedule it.` },
+  { q: `Can I book a site visit for ${name}?`, a: `Absolutely. We arrange complimentary site visits — including virtual tours for outstation buyers. Just request a visit and we'll schedule it.` },
   { q: `Are home loans available for ${name}?`, a: `Yes, ${name} is approved by leading banks and NBFCs. We help you compare rates and arrange financing with our banking partners.` },
 ];
 
@@ -81,7 +81,7 @@ export default async function ProjectPage({
     <>
       <Schema json={breadcrumbSchema([
         { name: "Home", url: "/" },
-        { name: project.category, url: project.category === "Commercial" || project.category === "SCO" ? "/commercial" : "/residential" },
+        { name: project.category, url: project.category === "Commercial" ? "/commercial" : "/residential" },
         { name: project.name, url: `/projects/${project.slug}` },
       ])} />
       <Schema json={productSchema({
@@ -101,7 +101,7 @@ export default async function ProjectPage({
             light
             items={[
               { name: "Home", href: "/" },
-              { name: project.category, href: project.category === "Commercial" || project.category === "SCO" ? "/commercial" : "/residential" },
+              { name: project.category, href: project.category === "Commercial" ? "/commercial" : "/residential" },
               { name: project.name, href: `/projects/${project.slug}` },
             ]}
           />
@@ -254,8 +254,8 @@ export default async function ProjectPage({
                   <p className="mt-4 text-sm leading-relaxed text-white/70">{developer.about}</p>
                   <div className="mt-5 flex gap-6 border-t border-white/10 pt-5 text-sm">
                     <div>
-                      <p className="font-display text-2xl font-bold text-gold">{developer.completed}M+</p>
-                      <p className="text-white/55">Sq.ft. Delivered</p>
+                      <p className="font-display text-2xl font-bold text-gold">{developer.completed}+</p>
+                      <p className="text-white/55">Projects Delivered</p>
                     </div>
                     <div>
                       <p className="font-display text-2xl font-bold text-gold">{developer.ongoing}</p>

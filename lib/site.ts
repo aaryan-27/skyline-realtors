@@ -6,10 +6,10 @@
 
 export const SITE = {
   name: "Skyline Realtors",
-  legalName: "Skyline Realtors | Property Dealer | Real Estate Consultant Gurugram",
-  tagline: "Your Trusted Partner for Real Estate Investments in Gurgaon",
+  legalName: "Skyline Realtors | Property Dealer & Real Estate Consultant in Gurgaon",
+  tagline: "Raising the Standard of Urban Living",
   description:
-    "Skyline Realtors is the trusted property dealer and real estate consultant for Gurugram, New Gurgaon, Dwarka Expressway & Delhi NCR. Explore luxury apartments, commercial spaces, SCO plots and high-growth investment opportunities with expert guidance.",
+    "Skyline Realtors is a trusted property dealer and real estate consultant in Gurgaon, specialising in premium builder floors, flats, plots and high-return investment opportunities across Palam Vihar, Sector 21, Sector 22 and Sector 23. Since 2021, we've helped hundreds of families and investors buy, sell and invest with confidence.",
   url: "https://www.skylinerealtors.in",
   phone: "+91 98996 27867",
   phoneRaw: "919899627867",
@@ -29,7 +29,7 @@ export const SITE = {
     full: "Shop No. 121, HUDA Market, opposite Rotary Public School, Mullahera, Sector 22, Gurugram, Haryana 122015, India",
   },
   hours: "Mon–Sun · 9:30 AM – 8:00 PM",
-  founded: "2008",
+  founded: "2021",
   social: {
     instagram: "https://instagram.com/skylinerealtors",
     facebook: "https://facebook.com/skylinerealtors",
@@ -39,38 +39,35 @@ export const SITE = {
 } as const;
 
 export const SERVICE_AREAS = [
-  "Dwarka Expressway",
-  "New Gurgaon",
-  "Sector 83",
-  "Sector 84",
-  "Sector 85",
-  "Sector 88",
-  "Sector 89",
-  "Golf Course Extension Road",
-  "Sohna Road",
-  "SPR Road",
-  "Delhi NCR",
+  "Palam Vihar",
+  "Palam Vihar Extension",
+  "Sector 21",
+  "Sector 22",
+  "Sector 23",
+  "Sector 23A",
+  "Old Gurgaon",
+  "Gurgaon",
 ] as const;
 
 export const PROPERTY_INTERESTS = [
-  "Luxury Apartments",
-  "Residential Projects",
-  "Commercial Property",
-  "SCO Plots",
-  "Retail Shops",
-  "Office Spaces",
   "Builder Floors",
-  "Pre-Launch Projects",
+  "Independent Flats",
+  "Residential Plots",
   "Investment Property",
+  "Resale Property",
+  "Ready-to-Move Homes",
+  "Rental Property",
+  "Commercial Shops",
+  "Sell My Property",
 ] as const;
 
 export const BUDGET_RANGES = [
-  "Under Rs.1 Cr",
-  "Rs.1 Cr – Rs.2 Cr",
-  "Rs.2 Cr – Rs.3.5 Cr",
-  "Rs.3.5 Cr – Rs.5 Cr",
-  "Rs.5 Cr – Rs.10 Cr",
-  "Rs.10 Cr+",
+  "Under Rs.75 Lakh",
+  "Rs.75 L – Rs.1.25 Cr",
+  "Rs.1.25 Cr – Rs.2 Cr",
+  "Rs.2 Cr – Rs.3 Cr",
+  "Rs.3 Cr – Rs.5 Cr",
+  "Rs.5 Cr+",
 ] as const;
 
 export const NAV_LINKS = [
@@ -94,7 +91,7 @@ export const NAV_LINKS = [
 export function waLink(message?: string) {
   const text = encodeURIComponent(
     message ??
-      "Hi Skyline Realtors, I'd like to know more about investment opportunities in Gurgaon."
+      "Hi Skyline Realtors, I'd like to know more about builder floors, flats and plots in Palam Vihar & Gurgaon."
   );
   return `https://wa.me/${SITE.whatsapp}?text=${text}`;
 }

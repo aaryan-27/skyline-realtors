@@ -11,24 +11,24 @@ import { MILESTONES, VALUES } from "@/lib/data/content";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Us — Trusted Real Estate Advisors in Gurgaon",
+  title: "About Us — Trusted Property Dealer in Gurgaon",
   description:
-    "Learn about Skyline Realtors — a decade of trusted, data-backed real estate advisory across Gurgaon, New Gurgaon & Dwarka Expressway. Rs.1000 Cr+ in deals, 5000+ happy clients.",
+    "Learn about Skyline Realtors — a trusted property dealer and real estate consultant in Gurgaon since 2021, specialising in premium builder floors, flats and plots across Palam Vihar and Sectors 21–23. Hundreds of families and investors served.",
   alternates: { canonical: "/about" },
 };
 
 const TEAM = [
   { name: "Rao Saheb", role: "Founder & Principal Advisor", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" },
-  { name: "Anjali Mehta", role: "Head of Investment Advisory", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" },
-  { name: "Karan Bhardwaj", role: "Commercial & SCO Specialist", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" },
-  { name: "Pooja Sharma", role: "Client Relations & NRI Desk", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" },
+  { name: "Anjali Mehta", role: "Head of Sales", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" },
+  { name: "Karan Bhardwaj", role: "Builder Floor & Plot Specialist", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" },
+  { name: "Pooja Sharma", role: "Client Relations", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" },
 ];
 
 const GALLERY = [
-  "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80",
+  "/photos/p069.jpg",
+  "/photos/p045.jpg",
+  "/photos/p090.jpg",
+  "/photos/p097.jpg",
 ];
 
 export default function AboutPage() {
@@ -48,11 +48,11 @@ export default function AboutPage() {
         eyebrow={`Established ${SITE.founded}`}
         title={
           <>
-            A decade of trusted <span className="text-gold-foil">real estate advisory</span> in Gurgaon
+            Your trusted <span className="text-gold-foil">property partner</span> in Gurgaon
           </>
         }
-        subtitle="We're not just property dealers — we're investment advisors who put your goals first, backed by deep local expertise and an obsession with transparency."
-        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+        subtitle="Since 2021, we've helped hundreds of families and investors buy, sell and invest with confidence — putting your goals first, backed by deep local expertise and an obsession with transparency."
+        image="/photos/p085.jpg"
       />
 
       {/* Overview */}
@@ -65,31 +65,33 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 space-y-4 text-ink/70">
               <p>
-                Founded in {SITE.founded} in the heart of New Gurgaon, Gurugram
-                Property began with a simple conviction: real estate buyers
-                deserve honest, data-backed advice — not pressure-selling.
+                At Skyline Realtors, we believe real estate is more than just
+                buying and selling properties — it&apos;s about finding the perfect
+                place to build your future. Founded in {SITE.founded} in Palam
+                Vihar, we began with a simple conviction: buyers deserve honest,
+                transparent advice, not pressure-selling.
               </p>
               <p>
-                Over a decade, we&apos;ve advised on more than{" "}
-                <strong className="text-navy">Rs.1,000 crore</strong> in property
-                transactions, helped over{" "}
-                <strong className="text-navy">5,000 families and investors</strong>,
-                and built preferred-partner relationships with{" "}
-                <strong className="text-navy">50+ leading developers</strong> —
-                from DLF and M3M to Godrej, Experion and Sobha.
+                Since then, we&apos;ve helped{" "}
+                <strong className="text-navy">hundreds of families and investors</strong>{" "}
+                make confident real estate decisions through personalised guidance
+                and a customer-first approach — specialising in premium{" "}
+                <strong className="text-navy">builder floors, flats, plots</strong>{" "}
+                and high-return investment opportunities across Gurgaon.
               </p>
               <p>
-                Today, we&apos;re recognised as one of the most trusted property
-                consultants for Gurgaon, New Gurgaon, Dwarka Expressway and the
-                wider Delhi NCR — specialising in luxury homes, commercial spaces
-                and SCO investments.
+                With a proven sales track record and deep expertise in{" "}
+                <strong className="text-navy">Palam Vihar, Sector 21, Sector 22
+                and Sector 23</strong>, we&apos;re dedicated to delivering
+                exceptional service and the best real estate opportunities in
+                the market — raising the standard of urban living.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { v: "Rs.1000Cr+", l: "Deals Advised" },
-                { v: "5000+", l: "Happy Clients" },
-                { v: "50+", l: "Developer Partners" },
+                { v: "350+", l: "Properties Sold" },
+                { v: "500+", l: "Families & Investors" },
+                { v: "4", l: "Prime Localities" },
               ].map((s) => (
                 <div key={s.l} className="rounded-xl bg-cloud p-4 text-center">
                   <p className="font-display text-2xl font-bold text-navy">{s.v}</p>
@@ -102,7 +104,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="corner-frame relative overflow-hidden rounded-3xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+                  src="/photos/p016.jpg"
                   alt="Skyline Realtors advisory office"
                   width={1000}
                   height={1100}
@@ -110,8 +112,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-gold-gradient p-6 text-navy shadow-gold sm:block">
-                <p className="font-display text-3xl font-bold">10+</p>
-                <p className="text-sm font-semibold">Years of Excellence</p>
+                <p className="font-display text-3xl font-bold">Since</p>
+                <p className="text-sm font-semibold">2021 · Trusted Locally</p>
               </div>
             </div>
           </Reveal>
@@ -123,9 +125,9 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: Target, title: "Our Mission", text: "To make property investment transparent, data-driven and rewarding for every client — turning real estate into a reliable wealth-building tool." },
-              { icon: Eye, title: "Our Vision", text: "To be the most trusted real estate investment advisory in Delhi NCR, known for integrity, expertise and lifelong client relationships." },
-              { icon: Gem, title: "Our Promise", text: "Honest advice, verified inventory and best-price access — always putting your financial goals ahead of any single transaction." },
+              { icon: Target, title: "Our Mission", text: "To make buying, selling and investing in property transparent, simple and rewarding for every client — helping families find the perfect place to build their future." },
+              { icon: Eye, title: "Our Vision", text: "To be the most trusted property dealer in Gurgaon, known for integrity, deep local expertise and lifelong client relationships." },
+              { icon: Gem, title: "Our Promise", text: "Honest advice, title-verified properties and the right price — always putting your goals ahead of any single transaction." },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 0.1}>
                 <div className="h-full rounded-2xl border border-navy/5 bg-white p-8 shadow-card">
@@ -168,7 +170,7 @@ export default function AboutPage() {
           <SectionHeading
             light
             eyebrow="Our Journey"
-            title={<>Milestones that mark our <span className="text-gold-foil">decade of growth</span></>}
+            title={<>Milestones from our <span className="text-gold-foil">journey since 2021</span></>}
           />
           <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-2 lg:grid-cols-3">
             {MILESTONES.map((m, i) => (
@@ -190,7 +192,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="The People Behind the Advice"
             title={<>Meet our <span className="text-gold-foil">expert team</span></>}
-            subtitle="Seasoned advisors who live and breathe Gurugram real estate."
+            subtitle="A dedicated local team who live and breathe Palam Vihar and Old Gurgaon real estate."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((member, i) => (
@@ -223,11 +225,11 @@ export default function AboutPage() {
             <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl bg-white p-8 shadow-card md:p-12">
               <Quote className="h-12 w-12 text-gold/20" />
               <blockquote className="mt-4 font-display text-xl leading-relaxed text-navy md:text-2xl">
-                “When we started, Gurgaon was full of brokers chasing commissions.
-                We chose a different path — to be advisors first. Every client who
-                trusts us with their hard-earned money deserves honesty, research
-                and results. That principle has guided us for over a decade, and it
-                always will.”
+                “When we started in 2021, Gurgaon was full of brokers chasing
+                commissions. We chose a different path — to be advisors first.
+                Every family that trusts us with such an important decision
+                deserves honesty, transparency and results. That principle has
+                guided us from day one, and it always will.”
               </blockquote>
               <div className="mt-8 flex items-center gap-4">
                 <div className="grid h-14 w-14 place-items-center rounded-full bg-gold-gradient font-display text-lg font-bold text-navy">
@@ -251,10 +253,10 @@ export default function AboutPage() {
             <h2 className="font-display text-3xl text-navy md:text-4xl">Recognised for excellence</h2>
             <ul className="mt-8 space-y-4">
               {[
-                "Top Property Consultant — New Gurgaon (2023)",
-                "Preferred Channel Partner — DLF, M3M, Godrej & more",
-                "4.9★ Google Rating across 480+ verified reviews",
-                "Excellence in Commercial & SCO Advisory (2024)",
+                "Top Property Dealer — Palam Vihar (2024)",
+                "Trusted partnerships with leading local builders",
+                "4.9★ Google Rating across 180+ verified reviews",
+                "Excellence in Builder Floor & Plot Advisory (2025)",
               ].map((a) => (
                 <li key={a} className="flex items-start gap-3 rounded-xl bg-cloud p-4">
                   <Award className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" />

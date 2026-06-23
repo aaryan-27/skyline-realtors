@@ -28,10 +28,10 @@ export function PropertyExplorer({ projects, showCategory = true }: Props) {
 
   const budgets = [
     { label: ALL, min: 0, max: Infinity },
-    { label: "Under Rs.3 Cr", min: 0, max: 30_000_000 },
-    { label: "Rs.3 – 5 Cr", min: 30_000_000, max: 50_000_000 },
-    { label: "Rs.5 – 8 Cr", min: 50_000_000, max: 80_000_000 },
-    { label: "Rs.8 Cr +", min: 80_000_000, max: Infinity },
+    { label: "Under Rs.1 Cr", min: 0, max: 10_000_000 },
+    { label: "Rs.1 – 2 Cr", min: 10_000_000, max: 20_000_000 },
+    { label: "Rs.2 – 3.5 Cr", min: 20_000_000, max: 35_000_000 },
+    { label: "Rs.3.5 Cr +", min: 35_000_000, max: Infinity },
   ];
 
   const filtered = useMemo(() => {

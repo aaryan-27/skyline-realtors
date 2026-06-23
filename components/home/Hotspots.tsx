@@ -10,14 +10,12 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const HOTSPOTS = LOCATIONS.filter((l) =>
   [
-    "dwarka-expressway",
-    "sector-84",
-    "sector-85",
-    "sector-88",
-    "sector-89",
-    "golf-course-extension-road",
-    "spr-road",
-    "sohna-road",
+    "palam-vihar",
+    "palam-vihar-extension",
+    "sector-21",
+    "sector-22",
+    "sector-23",
+    "sector-23a",
   ].includes(l.slug)
 );
 
@@ -38,13 +36,13 @@ export function Hotspots() {
       <div className="container relative">
         <SectionHeading
           light
-          eyebrow="Where the smart money goes"
+          eyebrow="Where we know every street"
           title={
             <>
-              Gurgaon <span className="text-gold-foil">Investment Hotspots</span>
+              Our Prime <span className="text-gold-foil">Gurgaon Localities</span>
             </>
           }
-          subtitle="Compare pricing, rental yields and growth potential across Gurugram's most promising corridors — then dive into a full investment analysis."
+          subtitle="Compare pricing, rental yields and growth potential across Palam Vihar and Sectors 21, 22 & 23 — then dive into a full locality analysis."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-12">
@@ -128,7 +126,7 @@ export function Hotspots() {
                     href={`/locations/${current.slug}`}
                     className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-200 hover:text-gold"
                   >
-                    Full Investment Analysis <ArrowUpRight className="h-4 w-4" />
+                    Full Locality Analysis <ArrowUpRight className="h-4 w-4" />
                   </Link>
                 </div>
               </motion.div>
