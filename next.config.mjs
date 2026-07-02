@@ -11,6 +11,7 @@ const nextConfig = {
   outputFileTracingRoot: __dirname,
   images: {
     formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000, // cache optimized images for a year
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "**.googleusercontent.com" },

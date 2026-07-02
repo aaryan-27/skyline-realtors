@@ -60,7 +60,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "Skyline Realtors made buying our first builder floor effortless. They handled the title check, paperwork and home loan, and never pushed us toward anything outside our budget. Completely transparent.",
-    invested: "3 BHK Builder Floor · Rs.1.6 Cr",
+    invested: "3 BHK Builder Floor · Rs.2.6 Cr",
     initials: "RM",
     videoThumb: "/photos/p029.jpg",
   },
@@ -71,7 +71,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "Their knowledge of Sector 23 was exceptional. They steered me toward a well-priced, ready-to-move flat that fit my needs perfectly. Genuine, honest advice — not just selling.",
-    invested: "3 BHK Flat · Rs.1.3 Cr",
+    invested: "3 BHK Flat · Rs.2.6 Cr",
     initials: "SV",
   },
   {
@@ -81,7 +81,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "We had a tight budget and zero experience. The team patiently explained pricing, loan options and the registry process. We moved into our home with no surprises. Highly recommend.",
-    invested: "2 BHK Builder Floor · Rs.95 L",
+    invested: "3 BHK Builder Floor · Rs.2.9 Cr",
     initials: "AK",
   },
   {
@@ -91,7 +91,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "I wanted a plot with strong appreciation potential. They walked me through the locality, pricing and approvals, and got me a clear-title corner plot at a fair rate. Excellent local expertise.",
-    invested: "Residential Plot · Rs.2.1 Cr",
+    invested: "Residential Plot · Rs.4.5 Cr",
     initials: "VR",
     videoThumb: "/photos/p095.jpg",
   },
@@ -112,7 +112,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote:
       "After decades of postings, I wanted a settled home. The team understood exactly what I needed, prioritised ready-to-move builder floors, and handled the registry seamlessly. Trustworthy and professional.",
-    invested: "3 BHK Builder Floor · Rs.1.5 Cr",
+    invested: "4 BHK Builder Floor · Rs.3.25 Cr",
     initials: "RS",
   },
 ];

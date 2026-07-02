@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, MessageCircle, CalendarCheck, ChevronDown, Star } from "lucide-react";
+import { ArrowRight, Phone, MessageCircle, CalendarCheck, ChevronDown, Star, MapPin } from "lucide-react";
 import { telLink, waLink } from "@/lib/site";
 
 const fade = (delay: number) => ({
@@ -11,20 +12,26 @@ const fade = (delay: number) => ({
   transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] as const },
 });
 
+const HERO_LOCATIONS = [
+  { slug: "palam-vihar", label: "Palam Vihar" },
+  { slug: "sector-21", label: "Sector 21" },
+  { slug: "sector-22", label: "Sector 22" },
+  { slug: "sector-23", label: "Sector 23" },
+  { slug: "sector-23a", label: "Sector 23A" },
+];
+
 export function Hero() {
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-navy">
-      {/* Background video with poster fallback (drop your skyline reel at /hero.mp4) */}
-      <video
+      {/* Optimized hero background image (LCP) */}
+      <Image
+        src="/photos/p085.jpg"
+        alt="Premium builder floor interior in Palam Vihar, Gurgaon"
+        fill
+        priority
+        sizes="100vw"
         className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/photos/p085.jpg"
-      >
-        <source src="/hero.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* Cinematic overlays */}
       <div className="absolute inset-0 bg-navy/55" />
@@ -56,7 +63,7 @@ export function Hero() {
           >
             Find the Perfect <br />
             <span className="text-gold-foil">Place to Build</span> <br />
-            Your Future
+            Your Future in <span className="text-gold-foil">Gurgaon</span>
           </motion.h1>
 
           <motion.p
@@ -81,6 +88,22 @@ export function Hero() {
             <a href={telLink()} className="btn-ghost">
               <Phone className="h-4 w-4" /> Call Now
             </a>
+          </motion.div>
+
+          {/* Location chips */}
+          <motion.div {...fade(0.7)} className="mt-8 flex flex-wrap items-center gap-2.5">
+            <span className="mr-1 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider2 text-white/60">
+              <MapPin className="h-4 w-4 text-gold" /> Our Localities
+            </span>
+            {HERO_LOCATIONS.map((loc) => (
+              <Link
+                key={loc.slug}
+                href={`/locations/${loc.slug}`}
+                className="rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm text-white/85 backdrop-blur-sm transition-colors hover:border-gold hover:bg-gold hover:text-navy"
+              >
+                {loc.label}
+              </Link>
+            ))}
           </motion.div>
 
           {/* Trust mini-stats */}

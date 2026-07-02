@@ -5,7 +5,6 @@ import { SITE } from "@/lib/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
-import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
 import { Analytics } from "@/components/analytics/Analytics";
 import { Schema } from "@/components/seo/Schema";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
@@ -89,7 +88,6 @@ export default function RootLayout({
         <main className="min-h-screen pb-16 md:pb-0">{children}</main>
         <Footer />
         <FloatingActions />
-        <ExitIntentPopup />
         <Analytics />
       </body>
     </html>

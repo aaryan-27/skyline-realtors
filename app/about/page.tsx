@@ -18,10 +18,8 @@ export const metadata: Metadata = {
 };
 
 const TEAM = [
-  { name: "Rao Saheb", role: "Founder & Principal Advisor", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" },
-  { name: "Anjali Mehta", role: "Head of Sales", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" },
-  { name: "Karan Bhardwaj", role: "Builder Floor & Plot Specialist", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" },
-  { name: "Pooja Sharma", role: "Client Relations", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" },
+  { name: "Suraj Chanana", role: "Founder & Chairman", img: "/team/suraj.jpg" },
+  { name: "Rahul Chanana", role: "Managing Director", img: "/team/rahul.jpg" },
 ];
 
 const GALLERY = [
@@ -192,11 +190,11 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="The People Behind the Advice"
             title={<>Meet our <span className="text-gold-foil">expert team</span></>}
-            subtitle="A dedicated local team who live and breathe Palam Vihar and Old Gurgaon real estate."
+            subtitle="The leadership behind Skyline Realtors — driven by trust, transparency and deep local expertise."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto mt-12 grid max-w-2xl gap-6 sm:grid-cols-2">
             {TEAM.map((member, i) => (
-              <Reveal key={member.name} delay={(i % 4) * 0.08}>
+              <Reveal key={member.name} delay={(i % 2) * 0.08}>
                 <div className="group overflow-hidden rounded-2xl border border-navy/5 bg-cloud/40 text-center shadow-card">
                   <div className="relative aspect-square overflow-hidden">
                     <Image
@@ -232,12 +230,16 @@ export default function AboutPage() {
                 guided us from day one, and it always will.”
               </blockquote>
               <div className="mt-8 flex items-center gap-4">
-                <div className="grid h-14 w-14 place-items-center rounded-full bg-gold-gradient font-display text-lg font-bold text-navy">
-                  RS
-                </div>
+                <Image
+                  src="/team/suraj.jpg"
+                  alt="Suraj Chanana, Founder & Chairman of Skyline Realtors"
+                  width={56}
+                  height={56}
+                  className="h-14 w-14 rounded-full object-cover"
+                />
                 <div>
-                  <p className="font-semibold text-navy">Rao Saheb</p>
-                  <p className="text-sm text-ink/55">Founder &amp; Principal Advisor</p>
+                  <p className="font-semibold text-navy">Suraj Chanana</p>
+                  <p className="text-sm text-ink/55">Founder &amp; Chairman</p>
                 </div>
               </div>
             </div>

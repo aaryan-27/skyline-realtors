@@ -10,11 +10,11 @@ export const SITE = {
   tagline: "Raising the Standard of Urban Living",
   description:
     "Skyline Realtors is a trusted property dealer and real estate consultant in Gurgaon, specialising in premium builder floors, flats, plots and high-return investment opportunities across Palam Vihar, Sector 21, Sector 22 and Sector 23. Since 2021, we've helped hundreds of families and investors buy, sell and invest with confidence.",
-  url: "https://www.skylinerealtors.in",
+  url: "https://skyline-realtors.in",
   phone: "+91 98996 27867",
   phoneRaw: "919899627867",
   whatsapp: "919899627867",
-  email: "info@skylinerealtors.in",
+  email: "info@skyline-realtors.in",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Skyline%20Realtors&query_place_id=ChIJAdE29asZDTkRBoHIf_jPk9g",
   mapsEmbed:
     "https://www.google.com/maps?q=Skyline+Realtors+Sector+22+Gurugram&output=embed",
@@ -31,10 +31,7 @@ export const SITE = {
   hours: "Mon–Sun · 9:30 AM – 8:00 PM",
   founded: "2021",
   social: {
-    instagram: "https://instagram.com/skylinerealtors",
-    facebook: "https://facebook.com/skylinerealtors",
-    youtube: "https://youtube.com/@skylinerealtors",
-    linkedin: "https://linkedin.com/company/skylinerealtors",
+    instagram: "https://www.instagram.com/skyline.realtors.in?utm_source=qr",
   },
 } as const;
 
@@ -62,27 +59,19 @@ export const PROPERTY_INTERESTS = [
 ] as const;
 
 export const BUDGET_RANGES = [
-  "Under Rs.75 Lakh",
-  "Rs.75 L – Rs.1.25 Cr",
-  "Rs.1.25 Cr – Rs.2 Cr",
-  "Rs.2 Cr – Rs.3 Cr",
-  "Rs.3 Cr – Rs.5 Cr",
-  "Rs.5 Cr+",
+  "Rs.2.5 Cr – Rs.3.25 Cr",
+  "Rs.3.25 Cr – Rs.4.25 Cr",
+  "Rs.4.25 Cr – Rs.5.5 Cr",
+  "Rs.5.5 Cr – Rs.7.5 Cr",
+  "Rs.7.5 Cr – Rs.10 Cr",
+  "Rs.10 Cr+",
 ] as const;
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  {
-    label: "Residential",
-    href: "/residential",
-  },
-  {
-    label: "Commercial",
-    href: "/commercial",
-  },
+  { label: "Properties", href: "/residential" },
   { label: "Locations", href: "/locations" },
-  { label: "Developers", href: "/developers" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;

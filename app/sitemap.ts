@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { PROJECTS } from "@/lib/data/projects";
 import { LOCATIONS } from "@/lib/data/locations";
-import { DEVELOPERS } from "@/lib/data/developers";
 import { BLOG_POSTS } from "@/lib/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,9 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "", priority: 1, freq: "weekly" as const },
     { url: "/about", priority: 0.8, freq: "monthly" as const },
     { url: "/residential", priority: 0.9, freq: "weekly" as const },
-    { url: "/commercial", priority: 0.9, freq: "weekly" as const },
     { url: "/locations", priority: 0.8, freq: "weekly" as const },
-    { url: "/developers", priority: 0.8, freq: "monthly" as const },
     { url: "/blog", priority: 0.7, freq: "weekly" as const },
     { url: "/contact", priority: 0.7, freq: "monthly" as const },
   ].map((r) => ({
@@ -39,13 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const developerRoutes = DEVELOPERS.map((d) => ({
-    url: `${base}/developers/${d.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
   const blogRoutes = BLOG_POSTS.map((b) => ({
     url: `${base}/blog/${b.slug}`,
     lastModified: new Date(b.date),
@@ -53,5 +43,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...projectRoutes, ...locationRoutes, ...developerRoutes, ...blogRoutes];
+  return [...staticRoutes, ...projectRoutes, ...locationRoutes, ...blogRoutes];
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Calendar, Clock, Mail } from "lucide-react";
+import { ArrowUpRight, Clock, Mail } from "lucide-react";
 import { BLOG_POSTS } from "@/lib/data/blog";
 import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
@@ -14,10 +14,6 @@ export const metadata: Metadata = {
     "Expert insights on Gurgaon real estate — market reports, buying and selling guides, builder-floor and plot advice, and locality guides for Palam Vihar and Sectors 21–23.",
   alternates: { canonical: "/blog" },
 };
-
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
-}
 
 export default function BlogPage() {
   const [featured, ...rest] = BLOG_POSTS;
@@ -69,9 +65,6 @@ export default function BlogPage() {
                 <p className="mt-4 text-ink/65">{featured.excerpt}</p>
                 <div className="mt-5 flex items-center gap-4 text-xs text-ink/50">
                   <span className="flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5" /> {formatDate(featured.date)}
-                  </span>
-                  <span className="flex items-center gap-1.5">
                     <Clock className="h-3.5 w-3.5" /> {featured.readTime}
                   </span>
                 </div>
@@ -106,9 +99,6 @@ export default function BlogPage() {
                     <h3 className="mt-2 font-display text-lg leading-snug text-navy">{post.title}</h3>
                     <p className="mt-2 line-clamp-2 flex-1 text-sm text-ink/60">{post.excerpt}</p>
                     <div className="mt-4 flex items-center gap-3 border-t border-navy/5 pt-4 text-xs text-ink/50">
-                      <span className="flex items-center gap-1.5">
-                        <Calendar className="h-3 w-3" /> {formatDate(post.date)}
-                      </span>
                       <span className="flex items-center gap-1.5">
                         <Clock className="h-3 w-3" /> {post.readTime}
                       </span>

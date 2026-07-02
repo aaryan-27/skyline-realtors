@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import {
   MapPin,
   Building2,
@@ -14,7 +13,6 @@ import {
   IndianRupee,
 } from "lucide-react";
 import { PROJECTS, getProject } from "@/lib/data/projects";
-import { getDeveloper } from "@/lib/data/developers";
 import { formatINR } from "@/lib/utils";
 import { SITE, telLink, waLink } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -70,7 +68,6 @@ export default async function ProjectPage({
   const project = getProject(slug);
   if (!project) notFound();
 
-  const developer = getDeveloper(project.builderSlug);
   const related = PROJECTS.filter(
     (p) => p.slug !== project.slug && (p.locationSlug === project.locationSlug || p.builderSlug === project.builderSlug)
   ).slice(0, 3);
@@ -81,7 +78,7 @@ export default async function ProjectPage({
     <>
       <Schema json={breadcrumbSchema([
         { name: "Home", url: "/" },
-        { name: project.category, url: project.category === "Commercial" ? "/commercial" : "/residential" },
+        { name: project.category, url: "/residential" },
         { name: project.name, url: `/projects/${project.slug}` },
       ])} />
       <Schema json={productSchema({
@@ -101,7 +98,7 @@ export default async function ProjectPage({
             light
             items={[
               { name: "Home", href: "/" },
-              { name: project.category, href: project.category === "Commercial" ? "/commercial" : "/residential" },
+              { name: project.category, href: "/residential" },
               { name: project.name, href: `/projects/${project.slug}` },
             ]}
           />
@@ -237,38 +234,6 @@ export default async function ProjectPage({
                 </div>
               </div>
             </Reveal>
-
-            {/* Builder */}
-            {developer && (
-              <Reveal>
-                <div className="rounded-2xl bg-navy p-7 text-white">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="text-xs uppercase tracking-wider2 text-gold-200">About the Developer</p>
-                      <h3 className="mt-1 font-display text-2xl">{developer.name}</h3>
-                    </div>
-                    <Link href={`/developers/${developer.slug}`} className="btn-ghost !px-5 !py-2.5">
-                      View Profile
-                    </Link>
-                  </div>
-                  <p className="mt-4 text-sm leading-relaxed text-white/70">{developer.about}</p>
-                  <div className="mt-5 flex gap-6 border-t border-white/10 pt-5 text-sm">
-                    <div>
-                      <p className="font-display text-2xl font-bold text-gold">{developer.completed}+</p>
-                      <p className="text-white/55">Projects Delivered</p>
-                    </div>
-                    <div>
-                      <p className="font-display text-2xl font-bold text-gold">{developer.ongoing}</p>
-                      <p className="text-white/55">Ongoing Projects</p>
-                    </div>
-                    <div>
-                      <p className="font-display text-2xl font-bold text-gold">{developer.founded}</p>
-                      <p className="text-white/55">Established</p>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            )}
 
             {/* Location map */}
             <Reveal>

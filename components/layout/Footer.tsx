@@ -5,21 +5,17 @@ import {
   MapPin,
   Clock,
   Instagram,
-  Facebook,
-  Youtube,
-  Linkedin,
   MessageCircle,
 } from "lucide-react";
 import { SITE, NAV_LINKS, SERVICE_AREAS, telLink, waLink } from "@/lib/site";
 import { LOCATIONS } from "@/lib/data/locations";
-import { DEVELOPERS } from "@/lib/data/developers";
 import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-navy text-white/70">
+    <footer className="relative overflow-hidden bg-navy pb-16 text-white/70 md:pb-0">
       <div className="pointer-events-none absolute inset-0 bg-grain opacity-[0.04]" />
       <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
 
@@ -54,23 +50,15 @@ export function Footer() {
             buy, sell and invest with confidence.
           </p>
           <div className="mt-6 flex gap-3">
-            {[
-              { icon: Instagram, href: SITE.social.instagram, label: "Instagram" },
-              { icon: Facebook, href: SITE.social.facebook, label: "Facebook" },
-              { icon: Youtube, href: SITE.social.youtube, label: "YouTube" },
-              { icon: Linkedin, href: SITE.social.linkedin, label: "LinkedIn" },
-            ].map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:bg-gold hover:text-navy"
-              >
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
+            <a
+              href={SITE.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:bg-gold hover:text-navy"
+            >
+              <Instagram className="h-4 w-4" />
+            </a>
           </div>
         </div>
 
@@ -99,19 +87,6 @@ export function Footer() {
                   className="transition-colors hover:text-gold-200"
                 >
                   {l.shortName}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <h4 className="mb-4 mt-7 font-display text-base text-white">Trusted Builders</h4>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-            {DEVELOPERS.slice(0, 6).map((d) => (
-              <li key={d.slug}>
-                <Link
-                  href={`/developers/${d.slug}`}
-                  className="transition-colors hover:text-gold-200"
-                >
-                  {d.name}
                 </Link>
               </li>
             ))}
@@ -168,6 +143,17 @@ export function Footer() {
         <div className="container flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/45 md:flex-row">
           <p>
             © {year} {SITE.name}. All rights reserved. RERA-compliant advisory.
+          </p>
+          <p>
+            Managed by{" "}
+            <a
+              href="https://pixelpulsemarketing.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-gold-200 hover:text-gold"
+            >
+              Pixel Pulse Marketing
+            </a>
           </p>
           <div className="flex gap-5">
             <Link href="/privacy" className="hover:text-gold-200">

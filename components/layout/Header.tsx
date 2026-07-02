@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,7 +13,10 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -24,6 +28,14 @@ export function Header() {
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
+
+  // Lock body scroll while the mobile drawer is open.
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   // All pages have a dark hero — header starts transparent over it until scrolled.
   const onDarkHero = !scrolled;
@@ -99,24 +111,27 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile drawer */}
-      <AnimatePresence>
-        {open && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setOpen(false)}
-              className="fixed inset-0 z-50 bg-navy/60 backdrop-blur-sm lg:hidden"
-            />
-            <motion.aside
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed inset-y-0 right-0 z-50 flex w-[82%] max-w-sm flex-col bg-navy text-white lg:hidden"
-            >
+      {/* Mobile drawer — portaled to <body> so it escapes the header's
+          backdrop-filter containing block and covers the full viewport. */}
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {open && (
+              <div className="lg:hidden">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setOpen(false)}
+                  className="fixed inset-0 z-[60] bg-navy/60 backdrop-blur-sm"
+                />
+                <motion.aside
+                  initial={{ x: "100%" }}
+                  animate={{ x: 0 }}
+                  exit={{ x: "100%" }}
+                  transition={{ type: "tween", duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                  className="fixed inset-y-0 right-0 z-[70] flex h-[100dvh] w-[82%] max-w-sm flex-col bg-navy text-white"
+                >
               <div className="flex items-center justify-between border-b border-white/10 p-5">
                 <Logo light />
                 <button
@@ -154,9 +169,11 @@ export function Header() {
                 </a>
               </div>
             </motion.aside>
-          </>
+              </div>
+            )}
+          </AnimatePresence>,
+          document.body
         )}
-      </AnimatePresence>
     </header>
   );
 }

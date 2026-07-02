@@ -3,10 +3,10 @@
   "autoPort": true,
   "configurations": [
     {
-      "name": "gurugram-property",
+      "name": "skyline",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start"],
-      "port": 3210
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
     }
   ]
 }

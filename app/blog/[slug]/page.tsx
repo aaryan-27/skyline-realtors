@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, Clock, Tag, ArrowUpRight, Facebook, Linkedin, Twitter } from "lucide-react";
+import { Clock, Tag, ArrowUpRight, Facebook, Linkedin, Twitter } from "lucide-react";
 import { BLOG_POSTS, getPost } from "@/lib/data/blog";
 import { SITE } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -32,10 +32,6 @@ export async function generateMetadata({
       publishedTime: post.date,
     },
   };
-}
-
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
 }
 
 export default async function BlogPostPage({
@@ -84,9 +80,6 @@ export default async function BlogPostPage({
             </span>
             <h1 className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl">{post.title}</h1>
             <div className="mt-6 flex flex-wrap items-center gap-5 text-sm text-white/60">
-              <span className="flex items-center gap-1.5">
-                <Calendar className="h-4 w-4 text-gold" /> {formatDate(post.date)}
-              </span>
               <span className="flex items-center gap-1.5">
                 <Clock className="h-4 w-4 text-gold" /> {post.readTime}
               </span>
