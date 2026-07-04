@@ -141,8 +141,8 @@ export const BLOG_POSTS: BlogPost[] = [
         body: "Sector 22 sits at the heart of Old Gurgaon, with a busy HUDA market and everything you need within walking distance. Its central location drives durable demand and some of the highest rental yields in the area — it's also where our own office is located.",
       },
       {
-        heading: "Sector 23 & 23A — spacious and family-friendly",
-        body: "Sectors 23 and 23A offer a quieter, more spacious feel, with a healthy mix of builder floors, flats and plots. Wide roads, green spaces and proximity to Palam Vihar make them ideal for families seeking a settled home.",
+        heading: "Sector 23 — spacious and family-friendly",
+        body: "Sector 23 offers a quieter, more spacious feel, with a healthy mix of builder floors, flats and plots. Wide roads, green spaces and proximity to Palam Vihar make it ideal for families seeking a settled home.",
       },
     ],
   },

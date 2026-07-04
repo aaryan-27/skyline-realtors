@@ -17,7 +17,7 @@ const HERO_LOCATIONS = [
   { slug: "sector-21", label: "Sector 21" },
   { slug: "sector-22", label: "Sector 22" },
   { slug: "sector-23", label: "Sector 23" },
-  { slug: "sector-23a", label: "Sector 23A" },
+  { slug: "dwarka-expressway", label: "Dwarka Expressway" },
 ];
 
 export function Hero() {
@@ -54,7 +54,7 @@ export function Hero() {
           </motion.div>
 
           <motion.p {...fade(0.2)} className="eyebrow !text-gold-300 mb-5">
-            Palam Vihar · Sector 21 · Sector 22 · Sector 23
+            Palam Vihar · Sector 21 · Sector 22 · Sector 23 · Dwarka Expressway
           </motion.p>
 
           <motion.h1

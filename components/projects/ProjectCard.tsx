@@ -62,7 +62,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <div>
             <p className="text-[11px] uppercase tracking-wider2 text-ink/40">Starting</p>
             <p className="font-display text-xl font-semibold text-navy">
-              {formatINR(project.priceFrom)}*
+              {formatINR(project.priceFrom)} onwards
             </p>
           </div>
           <p className="text-right text-xs text-ink/50">

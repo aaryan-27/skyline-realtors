@@ -15,7 +15,7 @@ const HOTSPOTS = LOCATIONS.filter((l) =>
     "sector-21",
     "sector-22",
     "sector-23",
-    "sector-23a",
+    "dwarka-expressway",
   ].includes(l.slug)
 );
 

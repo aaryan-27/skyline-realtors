@@ -13,8 +13,10 @@ export const SITE = {
   url: "https://skyline-realtors.in",
   phone: "+91 98996 27867",
   phoneRaw: "919899627867",
+  phone2: "+91 98100 18129",
+  phone2Raw: "919810018129",
   whatsapp: "919899627867",
-  email: "info@skyline-realtors.in",
+  email: "chananarahul2@gmail.com",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Skyline%20Realtors&query_place_id=ChIJAdE29asZDTkRBoHIf_jPk9g",
   mapsEmbed:
     "https://www.google.com/maps?q=Skyline+Realtors+Sector+22+Gurugram&output=embed",
@@ -41,7 +43,7 @@ export const SERVICE_AREAS = [
   "Sector 21",
   "Sector 22",
   "Sector 23",
-  "Sector 23A",
+  "Dwarka Expressway",
   "Old Gurgaon",
   "Gurgaon",
 ] as const;
@@ -85,6 +87,6 @@ export function waLink(message?: string) {
   return `https://wa.me/${SITE.whatsapp}?text=${text}`;
 }
 
-export function telLink() {
-  return `tel:+${SITE.phoneRaw}`;
+export function telLink(raw: string = SITE.phoneRaw) {
+  return `tel:+${raw}`;
 }

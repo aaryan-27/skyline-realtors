@@ -103,9 +103,14 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              <a href={telLink()} className="hover:text-gold-200">
-                {SITE.phone}
-              </a>
+              <span className="flex flex-col">
+                <a href={telLink()} className="hover:text-gold-200">
+                  {SITE.phone}
+                </a>
+                <a href={telLink(SITE.phone2Raw)} className="hover:text-gold-200">
+                  {SITE.phone2}
+                </a>
+              </span>
             </li>
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

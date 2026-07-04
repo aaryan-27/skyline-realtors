@@ -108,7 +108,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Colonel R.K. Sharma (Retd.)",
     role: "Defence Veteran",
-    location: "Ready-to-move · Sector 23A",
+    location: "Ready-to-move · Sector 23",
     rating: 5,
     quote:
       "After decades of postings, I wanted a settled home. The team understood exactly what I needed, prioritised ready-to-move builder floors, and handled the registry seamlessly. Trustworthy and professional.",

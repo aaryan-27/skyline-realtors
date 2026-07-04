@@ -45,7 +45,7 @@ export default function ContactPage() {
           <Reveal>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                { icon: Phone, label: "Call Us", value: SITE.phone, href: telLink() },
+                { icon: Phone, label: "Call Us", value: `${SITE.phone} · ${SITE.phone2}`, href: telLink() },
                 { icon: MessageCircle, label: "WhatsApp", value: "Chat with an advisor", href: waLink() },
                 { icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
                 { icon: Clock, label: "Office Hours", value: SITE.hours },

@@ -119,7 +119,7 @@ export default async function ProjectPage({
             </div>
             <div className="text-right">
               <p className="text-xs uppercase tracking-wider2 text-white/50">Starting Price</p>
-              <p className="font-display text-3xl font-bold text-gold">{formatINR(project.priceFrom)}*</p>
+              <p className="font-display text-3xl font-bold text-gold">{formatINR(project.priceFrom)} onwards</p>
               {project.pricePerSqft && (
                 <p className="text-sm text-white/55">≈ Rs.{project.pricePerSqft.toLocaleString("en-IN")}/sq.ft.</p>
               )}
@@ -194,7 +194,7 @@ export default async function ProjectPage({
                   </tbody>
                 </table>
               </div>
-              <p className="mt-3 text-xs text-ink/45">*Prices are indicative and subject to change. Request the latest price list &amp; offers.</p>
+              <p className="mt-3 text-xs text-ink/45">Prices are indicative and subject to change. Request the latest price list &amp; offers.</p>
             </Reveal>
 
             {/* Amenities */}
